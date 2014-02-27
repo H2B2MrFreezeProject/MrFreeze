@@ -1,0 +1,86 @@
+C:\Users\oyyou\Documents\Visual Studio 2010\Projects\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Frank.xnb
+C:\Users\oyyou\Documents\Visual Studio 2010\Projects\GravityTutorial\GravityTutorial\bin\x86\Debug\GravityTutorial.exe
+C:\Users\oyyou\Documents\Visual Studio 2010\Projects\GravityTutorial\GravityTutorial\bin\x86\Debug\GravityTutorial.pdb
+C:\Users\oyyou\Documents\Visual Studio 2010\Projects\GravityTutorial\GravityTutorial\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\oyyou\Documents\Visual Studio 2010\Projects\GravityTutorial\GravityTutorial\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\oyyou\Documents\Visual Studio 2010\Projects\GravityTutorial\GravityTutorial\obj\x86\Debug\GravityTutorial.exe
+C:\Users\oyyou\Documents\Visual Studio 2010\Projects\GravityTutorial\GravityTutorial\obj\x86\Debug\GravityTutorial.pdb
+C:\Users\oyyou\Documents\Visual Studio 2010\Projects\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Platform.xnb
+C:\Users\oyyou\Documents\Visual Studio 2010\Projects\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Song.xnb
+C:\Users\oyyou\Documents\Visual Studio 2010\Projects\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Song.wma
+C:\Users\oyyou\Documents\Visual Studio 2010\Projects\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Effect.xnb
+C:\Users\Hadrien\Desktop\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Frank.xnb
+C:\Users\Hadrien\Desktop\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Platform.xnb
+C:\Users\Hadrien\Desktop\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Effect.xnb
+C:\Users\Hadrien\Desktop\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Song.xnb
+C:\Users\Hadrien\Desktop\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Song.wma
+C:\Users\Hadrien\Desktop\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\GravityTutorial.exe
+C:\Users\Hadrien\Desktop\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\GravityTutorial.pdb
+C:\Users\Hadrien\Desktop\Tutorial 24\GravityTutorial\GravityTutorial\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Hadrien\Desktop\Tutorial 24\GravityTutorial\GravityTutorial\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Hadrien\Desktop\Tutorial 24\GravityTutorial\GravityTutorial\obj\x86\Debug\GravityTutorial.exe
+C:\Users\Hadrien\Desktop\Tutorial 24\GravityTutorial\GravityTutorial\obj\x86\Debug\GravityTutorial.pdb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Platform.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Effect.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Song.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Song.wma
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\GravityTutorial.exe
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\GravityTutorial.pdb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\obj\x86\Debug\GravityTutorial.exe
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\obj\x86\Debug\GravityTutorial.pdb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\walk.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\jump.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\full-animation.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\full-animation-aste.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Tile1.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Tile2.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\back.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Vid.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Vid.wmv
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\background.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\title.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\bouttons.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\bouttons2.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\back_menu.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\title2.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\logo2.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\obj\x86\Debug\GravityTutorial.csprojResolveAssemblyReference.cache
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\HERO.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\HERO2.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Full.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\FULLFINAL.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\ninjafull.xnb
+C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\walkpetit.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Platform.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\walk.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\jump.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\full-animation.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\full-animation-aste.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Tile2.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Tile1.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\back.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\background.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\title.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\bouttons.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\bouttons2.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\back_menu.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\title2.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\logo2.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\HERO.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\HERO2.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Full.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\FULLFINAL.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\ninjafull.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\walkpetit.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Effect.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Song.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\vid.xnb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Song.wma
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\vid.wmv
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\GravityTutorial.exe
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\GravityTutorial.pdb
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\obj\x86\Debug\GravityTutorial.csprojResolveAssemblyReference.cache
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\obj\x86\Debug\GravityTutorial.exe
+C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\obj\x86\Debug\GravityTutorial.pdb
