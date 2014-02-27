@@ -10,7 +10,7 @@ using Microsoft.Xna.Framework.Audio;
 namespace GravityTutorial
 {
     public enum Direction
-    { 
+    {
         Right,
         Left
     };
@@ -18,7 +18,8 @@ namespace GravityTutorial
     {
         //DEFINITION
         Texture2D texture;
-        int nbr_sprite = 12;
+        int nbr_sprite = 6;
+        int nbr_sprite_jump = 6;
         int player_Height = 90;
         int player_Width = 95;
 
@@ -66,17 +67,9 @@ namespace GravityTutorial
             {
                 this.Timer = 0;
                 this.frameCollumn++;
-                if (hasJumped)
-                {
-                    nbr_sprite = 6;
-                }
-                else
-                {
-                    nbr_sprite = 12;
-                }
                 if (this.frameCollumn > nbr_sprite)
                 {
-                    this.frameCollumn = 1;
+                    this.frameCollumn = 2;
                 }
             }
         }
@@ -129,25 +122,25 @@ namespace GravityTutorial
                 velocity.Y = -saut;
                 hasJumped = true;
             }
-            
-                float i = 1;
-                velocity.Y += 0.15f * i;
 
-                //SWITCH POUR GERER EFFECT SUR LE SPRITE
-                switch (this.Direction)
-                {
-                    case Direction.Right:
-                        this.Effect = SpriteEffects.None;
-                        break;
-                    case Direction.Left:
-                        this.Effect = SpriteEffects.FlipHorizontally;
-                        break;
-                }
-            
+            float i = 1;
+            velocity.Y += 0.15f * i;
+
+            //SWITCH POUR GERER EFFECT SUR LE SPRITE
+            switch (this.Direction)
+            {
+                case Direction.Right:
+                    this.Effect = SpriteEffects.None;
+                    break;
+                case Direction.Left:
+                    this.Effect = SpriteEffects.FlipHorizontally;
+                    break;
+            }
+
         }
         public void Collision(Rectangle newRectangle, int xoffset, int yoffset)
         {
-            Rectangle superrectangle = new Rectangle((int)position.X + (int)velocity.X,(int)position.Y + saut,player_Height,player_Width);
+            Rectangle superrectangle = new Rectangle((int)position.X + (int)velocity.X, (int)position.Y + saut, player_Height, player_Width);
             if (rectangle.isOnTopOf(newRectangle))
             {
                 rectangle.Y = newRectangle.Y - rectangle.Height + 4;
@@ -169,13 +162,13 @@ namespace GravityTutorial
                 {
                     velocity.Y = -velocity.Y;
                 }
-                position.Y = newRectangle.Bottom + velocity.Y;  
+                position.Y = newRectangle.Bottom + velocity.Y;
             }
 
             if (position.X < 0)
             { position.X = 0; }
             if (position.X > xoffset - rectangle.Width)
-            { position.X = xoffset - rectangle.Width;}
+            { position.X = xoffset - rectangle.Width; }
             /*if (position.Y < 0)
             { velocity.Y = 1f;}
             if (position.Y > yoffset - rectangle.Height)
@@ -184,7 +177,7 @@ namespace GravityTutorial
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(this.texture, rectangle, new Rectangle((this.frameCollumn - 1) * player_Width, (this.frameLine - 1) * player_Height, player_Width, player_Height), Color.White,0f,new Vector2(0,0),this.Effect,0f);
+            spriteBatch.Draw(this.texture, rectangle, new Rectangle((this.frameCollumn - 1) * player_Width, (this.frameLine - 1) * player_Height, player_Width, player_Height), Color.White, 0f, new Vector2(0, 0), this.Effect, 0f);
         }
     }
 }

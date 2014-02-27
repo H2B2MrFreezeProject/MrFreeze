@@ -2,3 +2,4 @@ C:\Users\oyyou\Documents\Visual Studio 2010\Projects\GravityTutorial\GravityTuto
 C:\Users\Hadrien\Desktop\Tutorial 24\GravityTutorial\GravityTutorialContent\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorialContent\obj\x86\Debug\GravityTutorialContent.contentprojResolveAssemblyReference.cache
 C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorialContent\obj\x86\Debug\GravityTutorialContent.contentprojResolveAssemblyReference.cache
+C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorialContent\obj\x86\Debug\GravityTutorialContent.contentprojResolveAssemblyReference.cache

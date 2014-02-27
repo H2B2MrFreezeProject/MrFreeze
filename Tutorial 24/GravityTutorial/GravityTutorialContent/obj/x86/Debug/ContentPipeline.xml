@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Platform.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Platform.xnb</Output>
       <Time>2014-02-13T22:57:18.5905111+01:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\walk.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\walk.xnb</Output>
       <Time>2014-02-13T21:41:12.1003229+01:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\jump.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\jump.xnb</Output>
       <Time>2014-02-13T21:42:07.6995029+01:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\full-animation.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\full-animation.xnb</Output>
       <Time>2014-02-14T21:28:00.8480104+01:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\full-animation-aste.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\full-animation-aste.xnb</Output>
       <Time>2014-02-14T22:05:31.179722+01:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Tile2.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Tile2.xnb</Output>
       <Time>2014-02-16T11:52:04.6132526+01:00</Time>
     </Item>
     <Item>
@@ -61,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Tile1.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Tile1.xnb</Output>
       <Time>2014-02-16T11:52:04.6152528+01:00</Time>
     </Item>
     <Item>
@@ -70,7 +70,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\back.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\back.xnb</Output>
       <Time>2014-02-22T14:44:04.4566926+01:00</Time>
     </Item>
     <Item>
@@ -79,7 +79,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\background.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\background.xnb</Output>
       <Time>2014-02-23T16:56:13.3557787+01:00</Time>
     </Item>
     <Item>
@@ -88,7 +88,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\title.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\title.xnb</Output>
       <Time>2014-02-23T16:57:08.9259572+01:00</Time>
     </Item>
     <Item>
@@ -97,7 +97,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\bouttons.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\bouttons.xnb</Output>
       <Time>2014-02-23T16:59:03.370503+01:00</Time>
     </Item>
     <Item>
@@ -106,7 +106,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\bouttons2.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\bouttons2.xnb</Output>
       <Time>2014-02-24T17:13:49.6648425+01:00</Time>
     </Item>
     <Item>
@@ -115,7 +115,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\back_menu.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\back_menu.xnb</Output>
       <Time>2014-02-24T17:17:08.3702078+01:00</Time>
     </Item>
     <Item>
@@ -124,7 +124,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\title2.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\title2.xnb</Output>
       <Time>2014-02-24T17:23:19.7714508+01:00</Time>
     </Item>
     <Item>
@@ -133,7 +133,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\logo2.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\logo2.xnb</Output>
       <Time>2014-02-24T19:11:01.8630613+01:00</Time>
     </Item>
     <Item>
@@ -142,7 +142,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\HERO.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\HERO.xnb</Output>
       <Time>2014-02-24T23:07:42.5911416+01:00</Time>
     </Item>
     <Item>
@@ -151,7 +151,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\HERO2.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\HERO2.xnb</Output>
       <Time>2014-02-24T23:11:30.0481514+01:00</Time>
     </Item>
     <Item>
@@ -160,7 +160,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Full.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Full.xnb</Output>
       <Time>2014-02-24T23:24:40.1253412+01:00</Time>
     </Item>
     <Item>
@@ -169,7 +169,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\FULLFINAL.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\FULLFINAL.xnb</Output>
       <Time>2014-02-24T23:57:05.222844+01:00</Time>
     </Item>
     <Item>
@@ -178,7 +178,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\ninjafull.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\ninjafull.xnb</Output>
       <Time>2014-02-25T12:22:47.3039516+01:00</Time>
     </Item>
     <Item>
@@ -187,7 +187,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\walkpetit.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\walkpetit.xnb</Output>
       <Time>2014-02-26T11:48:54.5495684+01:00</Time>
     </Item>
     <Item>
@@ -196,7 +196,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Effect.xnb</Output>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Effect.xnb</Output>
       <Time>2012-03-02T23:27:12+01:00</Time>
     </Item>
     <Item>
@@ -205,8 +205,8 @@
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Song.xnb</Output>
-      <Extra>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Song.wma</Extra>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Song.xnb</Output>
+      <Extra>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Song.wma</Extra>
       <Time>2012-03-02T23:27:12+01:00</Time>
     </Item>
     <Item>
@@ -215,8 +215,8 @@
       <Importer>WmvImporter</Importer>
       <Processor>VideoProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\vid.xnb</Output>
-      <Extra>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\vid.wmv</Extra>
+      <Output>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\vid.xnb</Output>
+      <Extra>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\vid.wmv</Extra>
       <Time>2014-02-23T10:36:29.995411+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -225,10 +225,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorialContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorialContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorialContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorialContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

@@ -43,12 +43,17 @@ namespace GravityTutorial
                 center.Y = position.Y + viewport.Height/ 5;
             }
             //else if (position.Y > yoffset - (viewport.Height / 2))
-            else if (position.Y > yoffset - 10)
+            else if (position.Y > yoffset)
+            {
+                center.Y = yoffset - (viewport.Height / 2);
+            }
+            else if (position.Y -80 > viewport.Height)
             {
                 //center.Y = yoffset - (viewport.Height / 3);
                 center.Y = position.Y - viewport.Height / 5;
                 
             }
+            
             /*else
             {
                 center.Y = position.Y;
