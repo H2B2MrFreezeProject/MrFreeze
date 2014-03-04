@@ -18,7 +18,11 @@ namespace GravityTutorial
         SpriteBatch spriteBatch;
         public int height_size;
         public int width_size;
+        SoundEffect effect;
+        SoundEffectInstance effect2;
+        
 
+        Song song;
 
         //PLAYER
         Character player;
@@ -97,7 +101,18 @@ namespace GravityTutorial
 
             
             // PLAYER CREATION
-            player = new Character(ressources.Player_animation, new Vector2(0, 0));       
+            player = new Character(ressources.Player_animation, new Vector2(0, 0));
+
+
+            //SOND
+            effect = Content.Load<SoundEffect>("SF-course_sable1");
+            effect2 = effect.CreateInstance();
+
+            song = Content.Load<Song>("DRUM&BASS");
+
+
+            MediaPlayer.Play(song);
+            MediaPlayer.Volume = 0.1f;
         }
 
 
@@ -123,10 +138,10 @@ namespace GravityTutorial
                 case 1:
                     if (inGame)
                     {
-                        player.Update(gameTime);
+                        player.Update(gameTime, effect2);
                         foreach (CollisionTiles tile in map.CollisionTiles)
                         {
-                            player.Collision(tile.Rectangle, map.Width, map.Height);
+                            player.Collision(tile.Rectangle, map.Width, map.Height, effect2);
                             camera.update(player.position, map.Width, map.Height);
                         }
                     }

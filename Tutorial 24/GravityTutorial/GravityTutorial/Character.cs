@@ -18,11 +18,10 @@ namespace GravityTutorial
     {
         //DEFINITION
         Texture2D texture;
-        int nbr_sprite = 6;
-        int nbr_sprite_jump = 6;
+        int nbr_sprite = 12;
         int player_Height = 90;
         int player_Width = 95;
-
+        
         public Vector2 position;
         public Vector2 velocity;
 
@@ -30,8 +29,8 @@ namespace GravityTutorial
         public bool hasJumped;
         public bool hasJumped2;
         public int saut = 6;
-        int Timer_double_jump;
-        int double_jump_timming = 50;
+        //int Timer_double_jump;
+        //int double_jump_timming = 50;
 
         //HITBOX
         public Rectangle rectangle;
@@ -43,7 +42,7 @@ namespace GravityTutorial
         Direction Direction;
         int Timer;
         int AnimationSpeed = 5;
-        int AnimationSpeedJump = 7;
+        //int AnimationSpeedJump = 7;
 
 
         public Character(Texture2D newTexture, Vector2 newPosition)
@@ -67,25 +66,22 @@ namespace GravityTutorial
             {
                 this.Timer = 0;
                 this.frameCollumn++;
-                if (this.frameCollumn > nbr_sprite)
+                if (this.frameCollumn > this.nbr_sprite)
                 {
-                    this.frameCollumn = 2;
+                    this.frameCollumn = 1;
                 }
             }
         }
 
-        public void Update(GameTime gameTime)
+        public void Update(GameTime gameTime, SoundEffectInstance effect)
         {
             //MECANISME
             position += velocity;
             if (hasJumped)
             {
                 this.frameLine = 2;
+                this.nbr_sprite = 6;
                 if (Keyboard.GetState().IsKeyUp(Keys.Right) && (Keyboard.GetState().IsKeyUp(Keys.Left)))
-                {
-                    this.frameCollumn = 1;
-                }
-                if (Keyboard.GetState().IsKeyUp(Keys.Left) && (Keyboard.GetState().IsKeyUp(Keys.Right)))
                 {
                     this.frameCollumn = 1;
                 }
@@ -93,6 +89,7 @@ namespace GravityTutorial
             else
             {
                 this.frameLine = 1;
+                this.nbr_sprite = 12;
             }
             rectangle = new Rectangle((int)position.X, (int)position.Y, player_Width, player_Height);
             if (Keyboard.GetState().IsKeyDown(Keys.Right))
@@ -136,25 +133,45 @@ namespace GravityTutorial
                     this.Effect = SpriteEffects.FlipHorizontally;
                     break;
             }
-
         }
-        public void Collision(Rectangle newRectangle, int xoffset, int yoffset)
+        public void Collision(Rectangle newRectangle, int xoffset, int yoffset, SoundEffectInstance effect)
         {
             Rectangle superrectangle = new Rectangle((int)position.X + (int)velocity.X, (int)position.Y + saut, player_Height, player_Width);
             if (rectangle.isOnTopOf(newRectangle))
             {
+
+                if ((Keyboard.GetState().IsKeyDown(Keys.Right) || (Keyboard.GetState().IsKeyDown(Keys.Left))) && hasJumped == false)
+                {
+                    if (effect.State != SoundState.Playing)
+                    {
+                            effect.Play();
+                    }
+                    if (hasJumped)
+                    {
+                        effect.Stop();
+                        effect.Resume();
+                    }
+                }
+                else
+                {
+                    effect.Stop();
+                    effect.Resume();
+                }
                 rectangle.Y = newRectangle.Y - rectangle.Height + 4;
                 velocity.Y = 0;
                 hasJumped = false;
                 hasJumped2 = false;
             }
+
             if (rectangle.isOnLeftOf(newRectangle) && Keyboard.GetState().IsKeyDown(Keys.Right))
             {
                 position.X = newRectangle.X - rectangle.Width - 3;
+
             }
             if (rectangle.isOnRightOf(newRectangle) && Keyboard.GetState().IsKeyDown(Keys.Left))
             {
                 position.X = newRectangle.X + newRectangle.Width + 3;
+
             }
             if (superrectangle.isOnBotOf(newRectangle))
             {
@@ -164,6 +181,7 @@ namespace GravityTutorial
                 }
                 position.Y = newRectangle.Bottom + velocity.Y;
             }
+
 
             if (position.X < 0)
             { position.X = 0; }

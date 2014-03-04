@@ -121,6 +121,7 @@
   <ItemGroup>
     <Content Include="Game.ico" />
     <Content Include="GameThumbnail.png" />
+    <Content Include="SF-course_sable1.wav" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GravityTutorialContent\GravityTutorialContent.contentproj">

@@ -3,3 +3,4 @@ C:\Users\Hadrien\Desktop\Tutorial 24\GravityTutorial\GravityTutorialContent\obj\
 C:\Users\Hadrien\Desktop\XNA GAME\Tutorial 24\GravityTutorial\GravityTutorialContent\obj\x86\Debug\GravityTutorialContent.contentprojResolveAssemblyReference.cache
 C:\Users\Baptiste\Desktop\xna\Tutorial 24\GravityTutorial\GravityTutorialContent\obj\x86\Debug\GravityTutorialContent.contentprojResolveAssemblyReference.cache
 C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorialContent\obj\x86\Debug\GravityTutorialContent.contentprojResolveAssemblyReference.cache
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorialContent\obj\x86\Debug\GravityTutorialContent.contentprojResolveAssemblyReference.cache

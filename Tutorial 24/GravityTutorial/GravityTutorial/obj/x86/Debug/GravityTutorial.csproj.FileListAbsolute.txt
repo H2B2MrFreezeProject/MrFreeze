@@ -116,3 +116,23 @@ C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTuto
 C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\obj\x86\Debug\GravityTutorial.exe
 C:\Users\Baptiste\Desktop\Project_online\Tutorial 24\GravityTutorial\GravityTutorial\obj\x86\Debug\GravityTutorial.pdb
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Tile2.xnb
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Tile1.xnb
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\back.xnb
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\background.xnb
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\title.xnb
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\bouttons2.xnb
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\title2.xnb
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\logo2.xnb
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\walkpetit.xnb
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\SF-course_sable1.xnb
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\vid.xnb
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\vid.wmv
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\GravityTutorial.exe
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\GravityTutorial.pdb
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorial\obj\x86\Debug\GravityTutorial.csprojResolveAssemblyReference.cache
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorial\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorial\obj\x86\Debug\GravityTutorial.exe
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorial\obj\x86\Debug\GravityTutorial.pdb
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\DRUM&BASS.xnb
+C:\Users\Baptiste\Desktop\clone projet\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\DRUM&BASS.wma
