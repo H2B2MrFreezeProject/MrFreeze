@@ -112,9 +112,11 @@ namespace GravityTutorial
 
             song = Content.Load<Song>("DRUM&BASS");
 
-
-            MediaPlayer.Play(song);
-            MediaPlayer.Volume = 0.1f;
+            if (ressources.parameter[0])
+            {
+                MediaPlayer.Play(song);
+                MediaPlayer.Volume = 0.1f;
+            }
         }
 
 

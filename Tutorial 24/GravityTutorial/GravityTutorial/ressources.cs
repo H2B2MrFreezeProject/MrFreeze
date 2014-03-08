@@ -31,7 +31,7 @@ namespace GravityTutorial
             Title = Content.Load<Texture2D>("title");
 
             //PARAMETERS
-            parameter[0] = true; //Musique
+            parameter[0] = false; //Musique
             parameter[1] = true; //Bruitages
         }
 

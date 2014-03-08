@@ -21,7 +21,7 @@ namespace GravityTutorial
         int nbr_sprite = 12;
         int player_Height = 90;
         int player_Width = 95;
-        
+
         public Vector2 position;
         public Vector2 velocity;
 
@@ -77,6 +77,8 @@ namespace GravityTutorial
         {
             //MECANISME
             position += velocity;
+            if (velocity.Y != 0)
+                this.hasJumped = true;
             if (hasJumped)
             {
                 this.frameLine = 2;
@@ -140,27 +142,41 @@ namespace GravityTutorial
             if (rectangle.isOnTopOf(newRectangle))
             {
 
-                if ((Keyboard.GetState().IsKeyDown(Keys.Right) || (Keyboard.GetState().IsKeyDown(Keys.Left))) && hasJumped == false)
+                if (ressources.parameter[1] && this.hasJumped == false)
                 {
-                    if (effect.State != SoundState.Playing)
+                    if (Keyboard.GetState().IsKeyDown(Keys.Left) || Keyboard.GetState().IsKeyDown(Keys.Right))
                     {
+                        if (effect.State != SoundState.Playing)
                             effect.Play();
                     }
-                    if (hasJumped)
+                    else
                     {
-                        effect.Stop();
                         effect.Resume();
+                        effect.Pause();
                     }
                 }
                 else
                 {
-                    effect.Stop();
                     effect.Resume();
+                    effect.Pause();
                 }
+
+                if (hasJumped)
+                {
+                    effect.Resume();
+                    effect.Pause();
+                }
+
                 rectangle.Y = newRectangle.Y - rectangle.Height + 4;
                 velocity.Y = 0;
                 hasJumped = false;
                 hasJumped2 = false;
+                if (Keyboard.GetState().IsKeyDown(Keys.Space) == true)
+                {
+                    effect.Resume();
+                    effect.Pause();
+                }
+
             }
 
             if (rectangle.isOnLeftOf(newRectangle) && Keyboard.GetState().IsKeyDown(Keys.Right))
@@ -181,6 +197,14 @@ namespace GravityTutorial
                 }
                 position.Y = newRectangle.Bottom + velocity.Y;
             }
+
+            if (this.velocity.Y > 0)
+            {
+                effect.Resume();
+                effect.Pause();
+            }
+
+
 
 
             if (position.X < 0)
