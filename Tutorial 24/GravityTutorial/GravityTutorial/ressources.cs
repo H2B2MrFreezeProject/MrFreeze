@@ -9,17 +9,30 @@ namespace GravityTutorial
 {
     class ressources
     {
-        public static Texture2D Player_animation, background, menu_back, bouton, Titre;
+        public static Texture2D Player_animation, 
+            background,
+            Button, BackgroundMenuMain, BackgroundMenuPause, Title;
+
+        public static bool[] parameter = new bool[2];
 
 
         public static void LoadContent(ContentManager Content)
         {
+            //PLAYER
             Player_animation = Content.Load<Texture2D>("walkpetit");
-            background = Content.Load<Texture2D>("back");
-            menu_back = Content.Load<Texture2D>("logo2");
-            bouton = Content.Load<Texture2D>("bouttons2");
-            Titre = Content.Load<Texture2D>("title2");
 
+            //GAME
+            background = Content.Load<Texture2D>("back");
+
+            //MENU
+            Button = Content.Load<Texture2D>("bouttons");
+            BackgroundMenuMain = Content.Load<Texture2D>("backgroundmenu");
+            BackgroundMenuPause = Content.Load<Texture2D>("backgroundmenugris");
+            Title = Content.Load<Texture2D>("title");
+
+            //PARAMETERS
+            parameter[0] = true; //Musique
+            parameter[1] = true; //Bruitages
         }
 
     }

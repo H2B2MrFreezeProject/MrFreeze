@@ -49,7 +49,7 @@ namespace GravityTutorial
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
-            //this.graphics.IsFullScreen = true;
+            this.graphics.IsFullScreen = true;
         }
 
         protected override void Initialize()
@@ -59,8 +59,7 @@ namespace GravityTutorial
 
             VidPlayer = new VideoPlayer();
 
-            menu = new Menu(Menu.MenuType.none, 0);
-            menu = menu.ChangeMenu(Menu.MenuType.welcome);
+            menu = new Menu(Menu.MenuType.none, 0, ressources.BackgroundMenuMain);
             inGame = false;
 
             base.Initialize();
@@ -82,6 +81,9 @@ namespace GravityTutorial
             {
                 VidPlayer.Play(vid);
             }
+
+            //MENU GENERATION
+            menu = menu.ChangeMenu(Menu.MenuType.welcome);
 
 
             // MAP GENERARATION
@@ -147,7 +149,7 @@ namespace GravityTutorial
                     }
                     else
                     {
-                        menu.Update(Mouse.GetState(), ref menu);
+                        menu.Update(Mouse.GetState(), Keyboard.GetState(), ref menu);
                     }
                     break;
             }

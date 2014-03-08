@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>DRUM&amp;BASS.mp3</Source>
+      <Name>DRUM&amp;BASS</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Git - Copie\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\DRUM&amp;BASS.xnb</Output>
+      <Extra>C:\Users\Asus\Desktop\Epita\Projet\Git - Copie\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\DRUM&amp;BASS.wma</Extra>
+      <Time>2014-03-08T14:38:51.1289837+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Tile2.png</Source>
+      <Name>Tile2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Git - Copie\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Tile2.xnb</Output>
+      <Time>2014-03-08T14:38:54.7263727+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Tile1.png</Source>
+      <Name>Tile1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Git - Copie\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Tile1.xnb</Output>
+      <Time>2014-03-08T14:38:54.7253718+01:00</Time>
+    </Item>
+    <Item>
+      <Source>back.jpg</Source>
+      <Name>back</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Git - Copie\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\back.xnb</Output>
+      <Time>2014-03-08T14:38:54.7373798+01:00</Time>
+    </Item>
+    <Item>
+      <Source>logo2.png</Source>
+      <Name>logo2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Git - Copie\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\logo2.xnb</Output>
+      <Time>2014-03-08T14:38:54.8624618+01:00</Time>
+    </Item>
+    <Item>
+      <Source>walkpetit.png</Source>
+      <Name>walkpetit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Git - Copie\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\walkpetit.xnb</Output>
+      <Time>2014-03-08T14:38:54.9485197+01:00</Time>
+    </Item>
+    <Item>
+      <Source>vid.wmv</Source>
+      <Name>vid</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Git - Copie\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\vid.xnb</Output>
+      <Extra>C:\Users\Asus\Desktop\Epita\Projet\Git - Copie\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\vid.wmv</Extra>
+      <Time>2014-03-08T14:38:54.947518+01:00</Time>
+    </Item>
+    <Item>
+      <Source>SF-course_sable1.wav</Source>
+      <Name>SF-course_sable1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Git - Copie\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\SF-course_sable1.xnb</Output>
+      <Time>2014-03-08T14:38:54.5182361+01:00</Time>
+    </Item>
+    <Item>
+      <Source>backgroundmenu.png</Source>
+      <Name>backgroundmenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Git - Copie\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\backgroundmenu.xnb</Output>
+      <Time>2014-03-08T15:44:00.4853995+01:00</Time>
+    </Item>
+    <Item>
+      <Source>backgroundmenugris.png</Source>
+      <Name>backgroundmenugris</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Git - Copie\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\backgroundmenugris.xnb</Output>
+      <Time>2014-03-08T15:44:09.1791704+01:00</Time>
+    </Item>
+    <Item>
+      <Source>bouttons.png</Source>
+      <Name>bouttons</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Git - Copie\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\bouttons.xnb</Output>
+      <Time>2014-03-08T15:44:12.4853654+01:00</Time>
+    </Item>
+    <Item>
+      <Source>title.png</Source>
+      <Name>title</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Git - Copie\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\title.xnb</Output>
+      <Time>2014-03-08T15:44:16.8242451+01:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Asus\Desktop\Epita\Projet\Git - Copie\Tutorial 24\GravityTutorial\GravityTutorialContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Asus\Desktop\Epita\Projet\Git - Copie\Tutorial 24\GravityTutorial\GravityTutorial\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Asus\Desktop\Epita\Projet\Git - Copie\Tutorial 24\GravityTutorial\GravityTutorialContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Asus\Desktop\Epita\Projet\Git - Copie\Tutorial 24\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-01-20T10:25:40.1271063+01:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
