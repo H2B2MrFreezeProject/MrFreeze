@@ -26,6 +26,7 @@ namespace GravityTutorial
 
         //PLAYER
         Character player;
+        bool respawn = false;
 
         //VIEWPORT & Map
         Map map;
@@ -128,7 +129,11 @@ namespace GravityTutorial
 
         protected override void Update(GameTime gameTime)
         {
-            
+            if (respawn)
+            {
+                player = new Character(ressources.Player_animation, new Vector2(0, 0));
+                respawn = false;
+            }
             if (Keyboard.GetState().IsKeyDown(Keys.Enter)) Exit();
             if (exitgame)
                 this.Exit();
@@ -148,6 +153,11 @@ namespace GravityTutorial
                         {
                             player.Collision(tile.Rectangle, map.Width, map.Height, effect2);
                             camera.update(player.position, map.Width, map.Height);
+                        }
+                        if (player.position.Y > (map.Width))
+                        {
+                            player = null;
+                            respawn = true;
                         }
                     }
                     else
@@ -172,7 +182,7 @@ namespace GravityTutorial
                     spriteBatch.Draw(VidPlayer.GetTexture(), vidRectangle, Color.White);
                     break;
                 case 1:
-                    if (inGame)
+                    if (inGame && !respawn)
                     {
                         spriteBatch.Begin(SpriteSortMode.Deferred,
                                 BlendState.AlphaBlend,
