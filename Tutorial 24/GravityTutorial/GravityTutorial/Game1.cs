@@ -50,6 +50,7 @@ namespace GravityTutorial
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
             this.graphics.IsFullScreen = true;
+            //this.Window.AllowUserResizing = true;
         }
 
         protected override void Initialize()
