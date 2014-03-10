@@ -76,6 +76,11 @@ namespace GravityTutorial
         public void Update(GameTime gameTime, SoundEffectInstance effect)
         {
             //MECANISME
+            if (Keyboard.GetState().IsKeyDown(Keys.R))
+            {
+                position = Vector2.One;
+                velocity.Y = 0;
+            }
             position += velocity;
             if (velocity.Y != 0)
                 this.hasJumped = true;

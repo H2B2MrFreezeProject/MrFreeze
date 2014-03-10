@@ -49,8 +49,8 @@ namespace GravityTutorial
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
-            this.graphics.IsFullScreen = true;
-            //this.Window.AllowUserResizing = true;
+            //this.graphics.IsFullScreen = true;
+            this.Window.AllowUserResizing = true;
         }
 
         protected override void Initialize()
@@ -178,7 +178,7 @@ namespace GravityTutorial
                                 BlendState.AlphaBlend,
                                 null, null, null, null,
                                 camera.Transform);
-                        spriteBatch.Draw(ressources.background, new Rectangle(0, -200, map.Width, GraphicsDevice.Viewport.Height + 200), Color.White);
+                        spriteBatch.Draw(ressources.background, new Rectangle(0, -200, map.Width, GraphicsDevice.Viewport.Height + 500), Color.White);
                         map.Draw(spriteBatch);
                         player.Draw(spriteBatch);
                     }
