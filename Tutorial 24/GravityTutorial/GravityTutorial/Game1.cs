@@ -22,7 +22,7 @@ namespace GravityTutorial
         SoundEffectInstance effect2;
         
 
-        Song song;
+        public static Song song;
 
         //PLAYER
         Character player;
@@ -111,13 +111,20 @@ namespace GravityTutorial
             effect = Content.Load<SoundEffect>("SF-course_sable1");
             effect2 = effect.CreateInstance();
 
+            
             song = Content.Load<Song>("DRUM&BASS");
+
 
             if (ressources.parameter[0])
             {
-                MediaPlayer.Play(song);
+                MediaPlayer.Play(Game1.song);
                 MediaPlayer.Volume = 0.1f;
             }
+            else
+            {
+                MediaPlayer.Stop();
+            }
+   
         }
 
 

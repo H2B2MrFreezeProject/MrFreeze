@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 
 namespace GravityTutorial
 {
@@ -111,7 +112,7 @@ namespace GravityTutorial
                 case MenuType.pause:
                     {
                         actualMenu = new Menu(type, 3, ressources.BackgroundMenuMain);
-                        actualMenu.title = new Title(new Vector2(Xtitle, Ytitle), 4);
+                        actualMenu.title = new Title(new Vector2(Xtitle, Ytitle), 3);
                         actualMenu.Buttons[0] = new MenuButton(new Vector2(Xbutton, Ybutton0), 7, MenuType.unpause);
                         actualMenu.Buttons[1] = new MenuButton(new Vector2(Xbutton, Ybutton1), 5, MenuType.reloadlevel);
                         actualMenu.Buttons[2] = new MenuButton(new Vector2(Xbutton, Ybutton2), 6, MenuType.welcome);
@@ -123,7 +124,7 @@ namespace GravityTutorial
                         Game1.inGame = true;
                         //Précharge la pause
                         actualMenu = new Menu(MenuType.pause, 3, ressources.BackgroundMenuPause);
-                        actualMenu.title = new Title(new Vector2(Xtitle, Ytitle), 4);
+                        actualMenu.title = new Title(new Vector2(Xtitle, Ytitle), 3);
                         actualMenu.Buttons[0] = new MenuButton(new Vector2(Xbutton, Ybutton0), 7, MenuType.unpause);
                         actualMenu.Buttons[1] = new MenuButton(new Vector2(Xbutton, Ybutton1), 5, MenuType.reloadlevel);
                         actualMenu.Buttons[2] = new MenuButton(new Vector2(Xbutton, Ybutton2), 6, MenuType.welcome);
@@ -135,7 +136,7 @@ namespace GravityTutorial
                         Game1.inGame = true;
                         //Précharge la pause
                         actualMenu = new Menu(MenuType.pause, 3, ressources.BackgroundMenuPause);
-                        actualMenu.title = new Title(new Vector2(Xtitle, Ytitle), 4);
+                        actualMenu.title = new Title(new Vector2(Xtitle, Ytitle), 3);
                         actualMenu.Buttons[0] = new MenuButton(new Vector2(Xbutton, Ybutton0), 7, MenuType.unpause);
                         actualMenu.Buttons[1] = new MenuButton(new Vector2(Xbutton, Ybutton1), 5, MenuType.reloadlevel);
                         actualMenu.Buttons[2] = new MenuButton(new Vector2(Xbutton, Ybutton2), 6, MenuType.welcome);
@@ -147,7 +148,7 @@ namespace GravityTutorial
                         Game1.inGame = true;
                         //Précharge la pause
                         actualMenu = new Menu(MenuType.pause, 3, ressources.BackgroundMenuPause);
-                        actualMenu.title = new Title(new Vector2(Xtitle, Ytitle), 4);
+                        actualMenu.title = new Title(new Vector2(Xtitle, Ytitle), 3);
                         actualMenu.Buttons[0] = new MenuButton(new Vector2(Xbutton, Ybutton0), 7, MenuType.unpause);
                         actualMenu.Buttons[1] = new MenuButton(new Vector2(Xbutton, Ybutton1), 5, MenuType.reloadlevel);
                         actualMenu.Buttons[2] = new MenuButton(new Vector2(Xbutton, Ybutton2), 6, MenuType.welcome);
@@ -163,7 +164,7 @@ namespace GravityTutorial
 
                         //Précharge la pause
                         actualMenu = new Menu(MenuType.pause, 3, ressources.BackgroundMenuPause);
-                        actualMenu.title = new Title(new Vector2(Xtitle, Ytitle), 4);
+                        actualMenu.title = new Title(new Vector2(Xtitle, Ytitle), 3);
                         actualMenu.Buttons[0] = new MenuButton(new Vector2(Xbutton, Ybutton0), 7, MenuType.unpause);
                         actualMenu.Buttons[1] = new MenuButton(new Vector2(Xbutton, Ybutton1), 5, MenuType.reloadlevel);
                         actualMenu.Buttons[2] = new MenuButton(new Vector2(Xbutton, Ybutton2), 6, MenuType.welcome);
@@ -204,6 +205,21 @@ namespace GravityTutorial
 
         public void Update(MouseState mouse, KeyboardState keyboard, ref Menu menu)
         {
+
+            //Musique
+            if (ressources.parameter[0] && MediaPlayer.State != MediaState.Playing)
+            {
+                MediaPlayer.Play(Game1.song);
+                MediaPlayer.Volume = 0.1f;
+            }
+
+            else if (ressources.parameter[0] == false)
+            {
+                MediaPlayer.Stop();
+            }
+
+
+
 
             if (!menu.cooldown &
                 mouse.LeftButton == ButtonState.Released &

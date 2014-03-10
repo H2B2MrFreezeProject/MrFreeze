@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Media;
 
 namespace GravityTutorial
 {
@@ -140,6 +141,22 @@ namespace GravityTutorial
                     this.Effect = SpriteEffects.FlipHorizontally;
                     break;
             }
+
+
+            //Musique
+            if (ressources.parameter[0] && MediaPlayer.State != MediaState.Playing)
+            {
+                MediaPlayer.Play(Game1.song);
+                MediaPlayer.Volume = 0.1f;
+            }
+
+            else if (ressources.parameter[0] == false)
+            {
+                MediaPlayer.Stop();
+            }
+            
+
+
         }
         public void Collision(Rectangle newRectangle, int xoffset, int yoffset, SoundEffectInstance effect)
         {
