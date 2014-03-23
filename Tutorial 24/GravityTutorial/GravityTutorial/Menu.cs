@@ -18,7 +18,7 @@ namespace GravityTutorial
         int nbSwitchButton;
         public SwitchButton[] SButtons;
 
-        public Title title;
+        public MenuTitle title;
         public Texture2D background;
 
         public MenuType actualType;
@@ -37,7 +37,8 @@ namespace GravityTutorial
             freeplay,
             adventure,
             unpause,
-            reloadlevel
+            reloadlevel,
+            defaultcommand
         }
 
         //CONSTRUCTOR
@@ -82,8 +83,8 @@ namespace GravityTutorial
 
                 case MenuType.welcome:
                     {
-                        actualMenu = new Menu(type, 3, ressources.BackgroundMenuMain);
-                        actualMenu.title = new Title(new Vector2(Xtitle, Ytitle), 0);
+                        actualMenu = new Menu(type, 3, Ressource.BackgroundMenuMain);
+                        actualMenu.title = new MenuTitle(new Vector2(Xtitle, Ytitle), 0);
                         actualMenu.Buttons[0] = new MenuButton(new Vector2(Xbutton, Ybutton0), 0, MenuType.play);
                         actualMenu.Buttons[1] = new MenuButton(new Vector2(Xbutton, Ybutton1), 1, MenuType.option);
                         actualMenu.Buttons[2] = new MenuButton(new Vector2(Xbutton, Ybutton2), 2, MenuType.close);
@@ -92,8 +93,8 @@ namespace GravityTutorial
                     }
                 case MenuType.play:
                     {
-                        actualMenu = new Menu(type, 3, ressources.BackgroundMenuMain);
-                        actualMenu.title = new Title(new Vector2(Xtitle, Ytitle), 1);
+                        actualMenu = new Menu(type, 3, Ressource.BackgroundMenuMain);
+                        actualMenu.title = new MenuTitle(new Vector2(Xtitle, Ytitle), 1);
                         actualMenu.Buttons[0] = new MenuButton(new Vector2(Xbutton, Ybutton0), 3, MenuType.adventure);
                         actualMenu.Buttons[1] = new MenuButton(new Vector2(Xbutton, Ybutton1), 4, MenuType.freeplay);
                         actualMenu.Buttons[2] = new MenuButton(new Vector2(Xbutton, Ybutton2), 8, this.actualType);
@@ -102,8 +103,8 @@ namespace GravityTutorial
                     }
                 case MenuType.option:
                     {
-                        actualMenu = new Menu(type, 1, ressources.BackgroundMenuMain, 2);
-                        actualMenu.title = new Title(new Vector2(Xtitle, Ytitle), 2);
+                        actualMenu = new Menu(type, 1, Ressource.BackgroundMenuMain, 2);
+                        actualMenu.title = new MenuTitle(new Vector2(Xtitle, Ytitle), 2);
                         actualMenu.SButtons[0] = new SwitchButton(new Vector2(Xbutton, Ybutton0), 9, 10, 0);
                         actualMenu.SButtons[1] = new SwitchButton(new Vector2(Xbutton, Ybutton1), 11, 12, 1);
                         actualMenu.Buttons[0] = new MenuButton(new Vector2(Xbutton, Ybutton2), 8, this.actualType);
@@ -111,8 +112,8 @@ namespace GravityTutorial
                     }
                 case MenuType.pause:
                     {
-                        actualMenu = new Menu(type, 3, ressources.BackgroundMenuMain);
-                        actualMenu.title = new Title(new Vector2(Xtitle, Ytitle), 3);
+                        actualMenu = new Menu(type, 3, Ressource.BackgroundMenuMain);
+                        actualMenu.title = new MenuTitle(new Vector2(Xtitle, Ytitle), 3);
                         actualMenu.Buttons[0] = new MenuButton(new Vector2(Xbutton, Ybutton0), 7, MenuType.unpause);
                         actualMenu.Buttons[1] = new MenuButton(new Vector2(Xbutton, Ybutton1), 5, MenuType.reloadlevel);
                         actualMenu.Buttons[2] = new MenuButton(new Vector2(Xbutton, Ybutton2), 6, MenuType.welcome);
@@ -123,8 +124,8 @@ namespace GravityTutorial
                     {
                         Game1.inGame = true;
                         //Précharge la pause
-                        actualMenu = new Menu(MenuType.pause, 3, ressources.BackgroundMenuPause);
-                        actualMenu.title = new Title(new Vector2(Xtitle, Ytitle), 3);
+                        actualMenu = new Menu(MenuType.pause, 3, Ressource.BackgroundMenuPause);
+                        actualMenu.title = new MenuTitle(new Vector2(Xtitle, Ytitle), 3);
                         actualMenu.Buttons[0] = new MenuButton(new Vector2(Xbutton, Ybutton0), 7, MenuType.unpause);
                         actualMenu.Buttons[1] = new MenuButton(new Vector2(Xbutton, Ybutton1), 5, MenuType.reloadlevel);
                         actualMenu.Buttons[2] = new MenuButton(new Vector2(Xbutton, Ybutton2), 6, MenuType.welcome);
@@ -135,8 +136,8 @@ namespace GravityTutorial
                     {
                         Game1.inGame = true;
                         //Précharge la pause
-                        actualMenu = new Menu(MenuType.pause, 3, ressources.BackgroundMenuPause);
-                        actualMenu.title = new Title(new Vector2(Xtitle, Ytitle), 3);
+                        actualMenu = new Menu(MenuType.pause, 3, Ressource.BackgroundMenuPause);
+                        actualMenu.title = new MenuTitle(new Vector2(Xtitle, Ytitle), 3);
                         actualMenu.Buttons[0] = new MenuButton(new Vector2(Xbutton, Ybutton0), 7, MenuType.unpause);
                         actualMenu.Buttons[1] = new MenuButton(new Vector2(Xbutton, Ybutton1), 5, MenuType.reloadlevel);
                         actualMenu.Buttons[2] = new MenuButton(new Vector2(Xbutton, Ybutton2), 6, MenuType.welcome);
@@ -147,8 +148,8 @@ namespace GravityTutorial
                     {
                         Game1.inGame = true;
                         //Précharge la pause
-                        actualMenu = new Menu(MenuType.pause, 3, ressources.BackgroundMenuPause);
-                        actualMenu.title = new Title(new Vector2(Xtitle, Ytitle), 3);
+                        actualMenu = new Menu(MenuType.pause, 3, Ressource.BackgroundMenuPause);
+                        actualMenu.title = new MenuTitle(new Vector2(Xtitle, Ytitle), 3);
                         actualMenu.Buttons[0] = new MenuButton(new Vector2(Xbutton, Ybutton0), 7, MenuType.unpause);
                         actualMenu.Buttons[1] = new MenuButton(new Vector2(Xbutton, Ybutton1), 5, MenuType.reloadlevel);
                         actualMenu.Buttons[2] = new MenuButton(new Vector2(Xbutton, Ybutton2), 6, MenuType.welcome);
@@ -163,18 +164,29 @@ namespace GravityTutorial
 
 
                         //Précharge la pause
-                        actualMenu = new Menu(MenuType.pause, 3, ressources.BackgroundMenuPause);
-                        actualMenu.title = new Title(new Vector2(Xtitle, Ytitle), 3);
+                        actualMenu = new Menu(MenuType.pause, 3, Ressource.BackgroundMenuPause);
+                        actualMenu.title = new MenuTitle(new Vector2(Xtitle, Ytitle), 3);
                         actualMenu.Buttons[0] = new MenuButton(new Vector2(Xbutton, Ybutton0), 7, MenuType.unpause);
                         actualMenu.Buttons[1] = new MenuButton(new Vector2(Xbutton, Ybutton1), 5, MenuType.reloadlevel);
                         actualMenu.Buttons[2] = new MenuButton(new Vector2(Xbutton, Ybutton2), 6, MenuType.welcome);
                         actualMenu.previousType = this.actualType;
                         break;
                     }
+                case MenuType.defaultcommand:
+                    {
+                        Ressource.Key.Clear();
+                        Ressource.Key.Add(Ressource.inGameAction.Up, Keys.Up);
+                        Ressource.Key.Add(Ressource.inGameAction.Down, Keys.Down);
+                        Ressource.Key.Add(Ressource.inGameAction.Left, Keys.Left);
+                        Ressource.Key.Add(Ressource.inGameAction.Right, Keys.Right);
+                        Ressource.Key.Add(Ressource.inGameAction.Jump, Keys.Space);
+                        Ressource.Key.Add(Ressource.inGameAction.Pause, Keys.Escape);
+                        break;
+                    }
                 default:
                     {
-                        actualMenu = new Menu(type, 0, ressources.BackgroundMenuMain);
-                        actualMenu.title = new Title(new Vector2(Xtitle, Ytitle), 0);
+                        actualMenu = new Menu(type, 0, Ressource.BackgroundMenuMain);
+                        actualMenu.title = new MenuTitle(new Vector2(Xtitle, Ytitle), 0);
                         actualMenu.previousType = this.actualType;
                         break;
                     }
@@ -207,13 +219,13 @@ namespace GravityTutorial
         {
 
             //Musique
-            if (ressources.parameter[0] && MediaPlayer.State != MediaState.Playing)
+            if (Ressource.parameter[0] && MediaPlayer.State != MediaState.Playing)
             {
                 MediaPlayer.Play(Game1.song);
                 MediaPlayer.Volume = 0.1f;
             }
 
-            else if (ressources.parameter[0] == false)
+            else if (Ressource.parameter[0] == false)
             {
                 MediaPlayer.Stop();
             }
@@ -262,128 +274,164 @@ namespace GravityTutorial
 
         }
 
-        public class Title
+    }
+
+    public class MenuTitle
+    {
+        //FIELDS
+        Vector2 pos;
+        Rectangle hitbox;
+
+        int SpriteHeight;
+        int SpriteWidth;
+        int FrameLine;
+
+
+        //CONSTRUCTOR
+        public MenuTitle(Vector2 pos, int FrameLine)
         {
-            //FIELDS
-            Vector2 pos;
-            Rectangle hitbox;
-
-            int SpriteHeight;
-            int SpriteWidth;
-            int FrameLine;
-
-
-            //CONSTRUCTOR
-            public Title(Vector2 pos, int FrameLine)
-            {
-                this.pos = pos;
-                this.FrameLine = FrameLine;
-                SpriteHeight = 250;
-                SpriteWidth = 700;
-                this.hitbox = new Rectangle((int)pos.X, (int)pos.Y, this.SpriteWidth, this.SpriteHeight);
-            }
-
-            //METHODS
-
-            //UPDATE & DRAW
-            public void Draw(SpriteBatch spriteBatch)
-            {
-                spriteBatch.Draw(ressources.Title, this.hitbox, new Rectangle(0, this.FrameLine * this.SpriteHeight, this.SpriteWidth, this.SpriteHeight),
-                    Color.White);
-            }
-
+            this.pos = pos;
+            this.FrameLine = FrameLine;
+            SpriteHeight = 250;
+            SpriteWidth = 700;
+            this.hitbox = new Rectangle((int)pos.X, (int)pos.Y, this.SpriteWidth, this.SpriteHeight);
         }
 
-        public class MenuButton : Button
+        //METHODS
+
+        //UPDATE & DRAW
+        public void Draw(SpriteBatch spriteBatch)
         {
-            //FIELDS
-            public Menu.MenuType nextMenu;
-
-
-            //CONSTRUCTOR
-            public MenuButton(Vector2 pos, int FrameLine, Menu.MenuType nextMenu)
-                : base(pos, FrameLine)
-            {
-                this.nextMenu = nextMenu;
-            }
-
-            //METHODS
-
-            //UPDATE & DRAW
-            public void Draw(SpriteBatch spriteBatch)
-            {
-                spriteBatch.Draw(ressources.Button, this.hitbox, new Rectangle(0, this.FrameLine * this.SpriteHeight, this.SpriteWidth, this.SpriteHeight),
-                    Color.White);
-            }
-
+            spriteBatch.Draw(Ressource.Title, this.hitbox, new Rectangle(0, this.FrameLine * this.SpriteHeight, this.SpriteWidth, this.SpriteHeight),
+                Color.White);
         }
 
-        public class Button
+    }
+
+    public class MenuButton : Button
+    {
+        //FIELDS
+        public Menu.MenuType nextMenu;
+
+
+        //CONSTRUCTOR
+        public MenuButton(Vector2 pos, int FrameLine, Menu.MenuType nextMenu)
+            : base(pos, FrameLine)
         {
-            //FIELDS
-            public Vector2 pos;
-            protected Rectangle hitbox;
+            this.nextMenu = nextMenu;
+        }
 
-            public int SpriteHeight;
-            public int SpriteWidth;
-            protected int FrameLine;
+        //METHODS
 
-            //CONSTRUCTOR
-            public Button(Vector2 pos, int FrameLine)
+        //UPDATE & DRAW
+        public void Draw(SpriteBatch spriteBatch)
+        {
+            spriteBatch.Draw(Ressource.Button, this.hitbox, new Rectangle(0, this.FrameLine * this.SpriteHeight, this.SpriteWidth, this.SpriteHeight),
+                Color.White);
+        }
+
+    }
+
+    public class Button
+    {
+        //FIELDS
+        public Vector2 pos;
+        protected Rectangle hitbox;
+
+        public int SpriteHeight;
+        public int SpriteWidth;
+        protected int FrameLine;
+
+        //CONSTRUCTOR
+        public Button(Vector2 pos, int FrameLine)
+        {
+            this.pos = pos;
+            this.FrameLine = FrameLine;
+            SpriteHeight = 75;
+            SpriteWidth = 500;
+            this.hitbox = new Rectangle((int)pos.X, (int)pos.Y, this.SpriteWidth, this.SpriteHeight);
+        }
+    }
+
+    public class SwitchButton : Button
+    {
+        //FIELDS
+        int nbParameter;
+        int FrameLineTrue;
+        int FrameLineFalse;
+
+        //CONSTRUCTOR
+        public SwitchButton(Vector2 pos, int FrameLineTrue, int FrameLineFalse, int nbParameter)
+            : base(pos, FrameLineTrue)
+        {
+            this.FrameLineTrue = FrameLineTrue;
+            this.FrameLineFalse = FrameLineFalse;
+            this.nbParameter = nbParameter;
+
+            if (Ressource.parameter[nbParameter])
             {
-                this.pos = pos;
-                this.FrameLine = FrameLine;
-                SpriteHeight = 75;
-                SpriteWidth = 500;
-                this.hitbox = new Rectangle((int)pos.X, (int)pos.Y, this.SpriteWidth, this.SpriteHeight);
+                this.FrameLine = FrameLineFalse;
             }
         }
 
-        public class SwitchButton : Button
+        //METHODS
+
+        //UPDATE & DRAW
+        public void Draw(SpriteBatch spriteBatch)
         {
-            //FIELDS
-            int nbParameter;
-            int FrameLineTrue;
-            int FrameLineFalse;
-
-            //CONSTRUCTOR
-            public SwitchButton(Vector2 pos, int FrameLineTrue, int FrameLineFalse, int nbParameter)
-                : base(pos, FrameLineTrue)
+            if (Ressource.parameter[nbParameter])
             {
-                this.FrameLineTrue = FrameLineTrue;
-                this.FrameLineFalse = FrameLineFalse;
-                this.nbParameter = nbParameter;
-
-                if (ressources.parameter[nbParameter])
-                {
-                    this.FrameLine = FrameLineFalse;
-                }
+                this.FrameLine = FrameLineTrue;
+            }
+            else
+            {
+                this.FrameLine = FrameLineFalse;
             }
 
-            //METHODS
+            spriteBatch.Draw(Ressource.Button,
+                this.hitbox,
+                new Rectangle(0, this.FrameLine * this.SpriteHeight, this.SpriteWidth, this.SpriteHeight),
+                Color.White);
+        }
 
-            //UPDATE & DRAW
-            public void Draw(SpriteBatch spriteBatch)
+        public void Update()
+        {
+            Ressource.parameter[this.nbParameter] = !Ressource.parameter[this.nbParameter];
+        }
+    }
+
+    public class ControleButton : Button
+    { 
+        //FIELDS
+        Ressource.inGameAction action;
+
+        //CONSTRUCTOR
+        public ControleButton(Vector2 pos, int FrameLine, Ressource.inGameAction action)
+            : base(pos, FrameLine)
+        {
+            this.action = action;
+        }
+
+        //UPDATE & DRAW
+        public void Update()
+        {
+            while (true)
             {
-                if (ressources.parameter[nbParameter])
+                foreach (Keys k in (Keys[]) Enum.GetValues(typeof(Keys)))
                 {
-                    this.FrameLine = FrameLineTrue;
+                    if (Keyboard.GetState().IsKeyDown(k) && !(Ressource.Key.ContainsValue(k)))
+                    {
+                        Ressource.Key[action] = k;
+                        return;
+                    }
                 }
-                else
-                {
-                    this.FrameLine = FrameLineFalse;
-                }
-
-                spriteBatch.Draw(ressources.Button,
-                    this.hitbox,
-                    new Rectangle(0, this.FrameLine * this.SpriteHeight, this.SpriteWidth, this.SpriteHeight),
-                    Color.White);
             }
+        }
 
-            public void Update()
-            {
-                ressources.parameter[this.nbParameter] = !ressources.parameter[this.nbParameter];
-            }
+        public void Draw(SpriteBatch spriteBatch)
+        {
+            spriteBatch.Draw(Ressource.Button, this.hitbox, new Rectangle(0, this.FrameLine * this.SpriteHeight, this.SpriteWidth, this.SpriteHeight),
+                Color.White);
         }
 
 
