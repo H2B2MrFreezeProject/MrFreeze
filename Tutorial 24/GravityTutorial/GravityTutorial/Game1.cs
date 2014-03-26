@@ -60,7 +60,7 @@ namespace GravityTutorial
 
             VidPlayer = new VideoPlayer();
 
-            menu = new Menu(Menu.MenuType.none, 0, Ressource.BackgroundMenuMain);
+            menu = new Menu(Menu.MenuType.none, 0, ressources.BackgroundMenuMain);
             inGame = false;
 
             base.Initialize();
@@ -71,7 +71,7 @@ namespace GravityTutorial
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            Ressource.LoadContent(Content);
+            ressources.LoadContent(Content);
 
 
             // VIDEO DISPLAY
@@ -104,7 +104,7 @@ namespace GravityTutorial
 
             
             // PLAYER CREATION
-            player = new Character(Ressource.Player_animation, new Vector2(0, 0));
+            player = new Character(ressources.Player_animation, new Vector2(0, 0));
 
 
             //SOND
@@ -115,7 +115,7 @@ namespace GravityTutorial
             song = Content.Load<Song>("DRUM&BASS");
 
 
-            if (Ressource.parameter[0])
+            if (ressources.parameter[0])
             {
                 MediaPlayer.Play(Game1.song);
                 MediaPlayer.Volume = 0.1f;
@@ -185,7 +185,7 @@ namespace GravityTutorial
                                 BlendState.AlphaBlend,
                                 null, null, null, null,
                                 camera.Transform);
-                        spriteBatch.Draw(Ressource.background, new Rectangle(0, -200, map.Width, GraphicsDevice.Viewport.Height + 500), Color.White);
+                        spriteBatch.Draw(ressources.background, new Rectangle(0, -200, map.Width, GraphicsDevice.Viewport.Height + 500), Color.White);
                         map.Draw(spriteBatch);
                         player.Draw(spriteBatch);
                     }
