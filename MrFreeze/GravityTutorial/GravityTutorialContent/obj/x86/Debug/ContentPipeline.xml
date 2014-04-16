@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>MusicRessources\DRUM&amp;BASS.mp3</Source>
+      <Name>MusicRessources\DRUM&amp;BASS</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MusicRessources\DRUM&amp;BASS.xnb</Output>
+      <Extra>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MusicRessources\DRUM&amp;BASS.wma</Extra>
+      <Time>2014-03-11T16:29:22+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Tile2.png</Source>
+      <Name>Tile2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Tile2.xnb</Output>
+      <Time>2014-03-11T16:29:22+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Tile1.png</Source>
+      <Name>Tile1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Tile1.xnb</Output>
+      <Time>2014-03-11T16:29:22+01:00</Time>
+    </Item>
+    <Item>
+      <Source>InGameRessources\back.jpg</Source>
+      <Name>InGameRessources\back</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\InGameRessources\back.xnb</Output>
+      <Time>2014-03-11T16:29:22+01:00</Time>
+    </Item>
+    <Item>
+      <Source>CharacterRessources\walkpetit.png</Source>
+      <Name>CharacterRessources\walkpetit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\CharacterRessources\walkpetit.xnb</Output>
+      <Time>2014-03-11T16:29:22+01:00</Time>
+    </Item>
+    <Item>
+      <Source>BonusRessources\items.png</Source>
+      <Name>BonusRessources\items</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\BonusRessources\items.xnb</Output>
+      <Time>2014-04-13T16:44:30+02:00</Time>
+    </Item>
+    <Item>
+      <Source>MenuRessources\backgroundmenu.png</Source>
+      <Name>MenuRessources\backgroundmenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MenuRessources\backgroundmenu.xnb</Output>
+      <Time>2014-03-11T16:29:22+01:00</Time>
+    </Item>
+    <Item>
+      <Source>MenuRessources\backgroundmenugris.png</Source>
+      <Name>MenuRessources\backgroundmenugris</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MenuRessources\backgroundmenugris.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>MenuRessources\title.png</Source>
+      <Name>MenuRessources\title</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MenuRessources\title.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>BonusRessources\gold.png</Source>
+      <Name>BonusRessources\gold</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\BonusRessources\gold.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>ecranbleu.jpg</Source>
+      <Name>ecranbleu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\ecranbleu.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>InGameRessources\bleucrash.jpg</Source>
+      <Name>InGameRessources\bleucrash</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\InGameRessources\bleucrash.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>MenuRessources\boutton.png</Source>
+      <Name>MenuRessources\boutton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MenuRessources\boutton.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>vid.wmv</Source>
+      <Name>vid</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\vid.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>MusicRessources\SF-course_sable1.wav</Source>
+      <Name>MusicRessources\SF-course_sable1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MusicRessources\SF-course_sable1.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>InGameRessources\Arial.spritefont</Source>
+      <Name>InGameRessources\Arial</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\InGameRessources\Arial.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>MenuRessources\ArialDefaultMenu.spritefont</Source>
+      <Name>MenuRessources\ArialDefaultMenu</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MenuRessources\ArialDefaultMenu.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <Item>
+      <Source>MenuRessources\MenuFont.spritefont</Source>
+      <Name>MenuRessources\MenuFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MenuRessources\MenuFont.xnb</Output>
+      <Time>0001-01-01T00:00:00</Time>
+    </Item>
+    <BuildSuccessful>false</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>F:\V1.6 16-04-14\GravityTutorial\GravityTutorialContent\</RootDirectory>
+      <LoggerRootDirectory>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\</LoggerRootDirectory>
+      <IntermediateDirectory>F:\V1.6 16-04-14\GravityTutorial\GravityTutorialContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T13:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-01-20T10:25:40.1271063+01:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

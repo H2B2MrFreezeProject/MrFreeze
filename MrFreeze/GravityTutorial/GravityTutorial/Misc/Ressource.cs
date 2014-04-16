@@ -15,7 +15,7 @@ namespace GravityTutorial
         public static Texture2D Player_animation, 
             background,
             Button, BackgroundMenuMain, BackgroundMenuPause, Title, 
-            Gold, Loser;
+            Gold, Items, Loser;
 
         public static SpriteFont Font;
         public static SpriteFont MenuPolice, ArialDefaultMenu;
@@ -26,7 +26,7 @@ namespace GravityTutorial
 
         public static Video vid;
 
-        public static bool[] parameter = new bool[2];
+        public static bool[] parameter = new bool[3];
 
         public enum inGameAction
         {
@@ -39,7 +39,12 @@ namespace GravityTutorial
         public static Dictionary<Ressource.inGameAction, Microsoft.Xna.Framework.Input.Keys> Key =
            new Dictionary<Ressource.inGameAction, Microsoft.Xna.Framework.Input.Keys>();
 
+        public static Dictionary<string, Tuple<string, string>> MenuString = new Dictionary<string, Tuple<string, string>>();
+
         public static int screenHeight, screenWidth;
+
+        public static string pseudo;
+
 
         public static void LoadContent(ContentManager Content)
         {
@@ -72,16 +77,46 @@ namespace GravityTutorial
             Title = Content.Load<Texture2D>(MenuFile + "title");
             MenuPolice = Content.Load<SpriteFont>(MenuFile + "MenuFont");
             ArialDefaultMenu = Content.Load<SpriteFont>(MenuFile + "ArialDefaultMenu");
+            pseudo = "USER";
+
+            //MENUSTRING
+            MenuString.Add("Retour", new Tuple<string,string>("Retour","Back"));
+            MenuString.Add("Jouer", new Tuple<string, string>("Jouer", "Play"));
+            MenuString.Add("Options", new Tuple<string, string>("Options", "Options"));
+            MenuString.Add("Quitter", new Tuple<string, string>("Quitter", "Quit"));
+            MenuString.Add("Touches", new Tuple<string, string>("Touches", "Keys"));
+            MenuString.Add("Droite", new Tuple<string, string>("Droite", "Right"));
+            MenuString.Add("Gauche", new Tuple<string, string>("Gauche", "Left"));
+            MenuString.Add("Saut", new Tuple<string, string>("Saut", "Jump"));
+            MenuString.Add("Pause", new Tuple<string, string>("Pause", "Pause"));
+            MenuString.Add("Niveau", new Tuple<string, string>("Niveau", "Level"));
+            MenuString.Add("Reprendre", new Tuple<string, string>("Reprendre", "Back to game"));
+            MenuString.Add("Aventure", new Tuple<string, string>("Aventure", "Aventure"));
+            MenuString.Add("Jeu libre", new Tuple<string, string>("Jeu libre", "Free level"));
+            MenuString.Add("Accueil", new Tuple<string, string>("Accueil", "Home"));
+            MenuString.Add("Recommencer", new Tuple<string, string>("Recommencer", "Start again"));
+            MenuString.Add("Bruitages", new Tuple<string, string>("Bruitage", "Sounds"));
+            MenuString.Add("Musique", new Tuple<string, string>("Musique", "Music"));
+            MenuString.Add("Par defaut", new Tuple<string, string>("Par defaut", "Default"));
+            MenuString.Add("Anglais", new Tuple<string, string>("Anglais", "English"));
+            MenuString.Add("Page 1", new Tuple<string, string>("Page 1", "Page 1"));
+            MenuString.Add("Page 2", new Tuple<string, string>("Page 2", "Page 2"));
+            //MenuString.Add("Pseudo actuel", new Tuple<string, string>("Pseudo actuel : ", "Current pseudo : "));
+            MenuString.Add("Pseudo", new Tuple<string, string>("Pseudo", "Pseudo"));
+            MenuString.Add("Valider", new Tuple<string, string>("Valider", "Validate"));
+
 
             //PARAMETERS
             parameter[0] = false; //Musique
-            parameter[1] = true; //Bruitages
+            parameter[1] = false; //Bruitages
+            parameter[2] = false; //English version
 
             //FONT
             Font = Content.Load<SpriteFont>(InGameFile + "Arial");
 
-            //BONUS
+            //ITEMS
             Gold = Content.Load<Texture2D>(BonusFile + "gold");
+            Items = Content.Load<Texture2D>(BonusFile + "items");
 
             //SOUND 
             effect = Content.Load<SoundEffect>(MusicFile + "SF-course_sable1");

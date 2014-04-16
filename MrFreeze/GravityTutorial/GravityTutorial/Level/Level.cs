@@ -15,10 +15,13 @@ namespace GravityTutorial
         //FIELDS
         public List<Character> Heroes;
         //List<Ennemy> Ennemies;
-        public List<Bonus> Bonuses;
+        public List<Item> Items;
 
         public Map map;
         public int lvl;
+
+        public int block_size = 70;
+        public int[,] matrice;
 
         //CONSRTRUCTOR
         public Level(int lvl)
@@ -26,7 +29,7 @@ namespace GravityTutorial
             this.lvl = lvl;
             map = new Map();
             Heroes = new List<Character>();
-            Bonuses = new List<Bonus>();
+            Items = new List<Item>();
             switch (lvl)
             {
                 case 0:
@@ -35,8 +38,7 @@ namespace GravityTutorial
                     }
                 case 1:
                     {
-                        int block_size = 70;
-                        map.Generate(new int[,]
+                        int[,] matrice = new int[,]
             {
                 {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,},
                 {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,},
@@ -46,8 +48,11 @@ namespace GravityTutorial
                 {0,0,0,0,1,0,0,0,0,0,0,1,0,0,4,4,4,0,0,4,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,},
                 {0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,},
                 {1,1,1,2,2,0,0,0,0,0,0,0,0,1,1,1,1,0,0,1,2,2,2,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,},
-             }, block_size, this);
+             };
+
+                        map.Generate(matrice, block_size, this);
                         Heroes.Add(new Character(Ressource.Player_animation, new Vector2(0, 0)));
+                        this.matrice = matrice;
                         break;
                     }
                 default:
@@ -64,13 +69,9 @@ namespace GravityTutorial
             {
                 Heroes.ElementAt(0).Collision(tile.Rectangle, map.Width, map.Height, Ressource.effect2, tile.Tile_name);
             }
-            foreach (Bonus gold in Bonuses)
+            foreach (Item i in Items)
             {
-                if (gold.type == Bonus.Type.Gold)
-                {
-                    gold.Update(Heroes.ElementAt(0), Game1.score);
-                }
-
+                    i.Update(Heroes.ElementAt(0), Game1.score);
             }
         }
 
@@ -78,15 +79,10 @@ namespace GravityTutorial
         {
             spriteBatch.Draw(Ressource.background, new Rectangle(0, -200, map.Width, Ressource.screenHeight + 500), Color.White);
             map.Draw(spriteBatch);
-            foreach (Bonus gold in Bonuses)
+            foreach (Item i in Items)
             {
-                if (gold.type == Bonus.Type.Gold)
-                {
-                    gold.Draw(spriteBatch);
-                }
+                    i.Draw(spriteBatch);
             }
-
-
 
 
             foreach (Character c in Heroes)
@@ -94,9 +90,9 @@ namespace GravityTutorial
                 c.Draw(spriteBatch);
             }
 
-            foreach (Bonus b in Bonuses)
+            foreach (Item i in Items)
             {
-                b.Draw(spriteBatch);
+                i.Draw(spriteBatch);
             }
 
 

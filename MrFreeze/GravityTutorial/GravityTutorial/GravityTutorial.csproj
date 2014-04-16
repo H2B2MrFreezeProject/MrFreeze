@@ -107,21 +107,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bonus\Bonus.cs" />
+    <Compile Include="Items\Bonus.cs" />
+    <Compile Include="Items\Item.cs" />
     <Compile Include="InGame Hors jeu\Camera.cs" />
     <Compile Include="InGame Jeu\Character.cs" />
     <Compile Include="InGame Jeu\Ennemy.cs" />
-    <Compile Include="LevelGeneration\Level.cs" />
-    <Compile Include="LevelGeneration\Map.cs" />
+    <Compile Include="Level\Level.cs" />
+    <Compile Include="Level\Map.cs" />
     <Compile Include="Misc\Menu.cs" />
-    <Compile Include="Bonus\gold.cs" />
+    <Compile Include="Items\Gold.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Misc\Program.cs" />
     <Compile Include="Misc\Game1.cs" />
     <Compile Include="InGame Hors jeu\RectangleHelper.cs" />
     <Compile Include="Misc\Ressource.cs" />
     <Compile Include="InGame Hors jeu\Score.cs" />
-    <Compile Include="LevelGeneration\Tile.cs" />
+    <Compile Include="Level\Tile.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Misc\Game.ico" />

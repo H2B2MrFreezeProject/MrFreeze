@@ -43,19 +43,21 @@ namespace GravityTutorial
                     int number = map[y, x];
 
 
-                    if (number > 0 && number !=4)
+                    if (number > 0 && number < 4)
                     {
                         CollisionTiles.Add(new CollisionTiles(number, new Rectangle(x * size, y * size, size, size)));
                     }
                     if (number == 4)
                     {
-                        Level.Bonuses.Add(new gold(new Vector2(x * size, y * size)));
+                        Level.Items.Add(new gold(new Vector2(x * size, y * size)));
                     }
                     width = (x + 1) * size;
                     height = (y + 1) * size;
                 }
             }
         }
+
+
         public void Draw(SpriteBatch spriteBatch)
         {
             

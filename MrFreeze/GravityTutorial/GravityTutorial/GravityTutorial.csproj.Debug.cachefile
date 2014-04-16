@@ -3,6 +3,7 @@ Content\Tile2.xnb
 Content\Tile1.xnb
 Content\InGameRessources\back.xnb
 Content\CharacterRessources\walkpetit.xnb
+Content\BonusRessources\items.xnb
 Content\MenuRessources\backgroundmenu.xnb
 Content\MenuRessources\backgroundmenugris.xnb
 Content\MenuRessources\title.xnb
@@ -21,3 +22,4 @@ Content\InGameRessources\back.jpg
 Content\MenuRessources\backgroundmenu.png
 Content\MenuRessources\backgroundmenugris.png
 Content\MenuRessources\title.png
+Content\MenuRessources\MenuFont.spritefont

@@ -45,6 +45,9 @@ namespace GravityTutorial
         int AnimationSpeed = 5;
         //int AnimationSpeedJump = 7;
 
+        //BONUS
+        public Item.Type CurrentItem;
+
 
         public Character(Texture2D newTexture, Vector2 newPosition)
         {
@@ -52,10 +55,12 @@ namespace GravityTutorial
 
             position = newPosition;
             hasJumped = true;
-            hasJumped2 = false;
+            hasJumped2 = true;
             this.Timer = 0;
             this.frameCollumn = 1;
             this.frameLine = 1;
+
+            CurrentItem = Item.Type.None;
 
         }
 
@@ -83,8 +88,12 @@ namespace GravityTutorial
                 velocity.Y = 0;
             }
             position += velocity;
+
+
             if (velocity.Y != 0)
                 this.hasJumped = true;
+
+
             if (hasJumped)
             {
                 this.frameLine = 2;
@@ -100,6 +109,8 @@ namespace GravityTutorial
                 this.nbr_sprite = 12;
             }
             rectangle = new Rectangle((int)position.X, (int)position.Y, player_Width, player_Height);
+
+
             if (Keyboard.GetState().IsKeyDown(Ressource.Key[Ressource.inGameAction.Right]))
             {
                 velocity.X = 3f;
@@ -121,11 +132,20 @@ namespace GravityTutorial
                 velocity.X = 0f;
             }
 
-            if (Keyboard.GetState().IsKeyDown(Ressource.Key[Ressource.inGameAction.Jump]) && hasJumped == false)
+
+            if (Keyboard.GetState().IsKeyDown(Ressource.Key[Ressource.inGameAction.Jump]) && (hasJumped == false || (hasJumped2 == false && CurrentItem == Item.Type.DoubleJump)))
             {
                 position.Y -= 5f;
                 velocity.Y = -saut;
-                hasJumped = true;
+                if (hasJumped == true)
+                {
+                    hasJumped2 = true;
+                }
+                else
+                {
+                    hasJumped = true;
+                }
+                
             }
 
             float i = 1;
@@ -154,10 +174,10 @@ namespace GravityTutorial
             {
                 MediaPlayer.Stop();
             }
-            
-
-
         }
+
+
+
         public void Collision(Rectangle newRectangle, int xoffset, int yoffset, SoundEffectInstance effect, string name)
         {
             Rectangle superrectangle = new Rectangle((int)position.X + (int)velocity.X, (int)position.Y + saut, player_Height, player_Width);

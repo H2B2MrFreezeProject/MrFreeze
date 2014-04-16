@@ -7,18 +7,18 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace GravityTutorial
 {
-    public class gold : Bonus
+    public class gold : Item
     {
         //FIELDS
         int nbPoint = 10;
 
         //CONSTRUCTOR
         public gold(Vector2 position) :
-            base(position, Ressource.Gold, Bonus.Type.Gold)
+            base(position, Ressource.Gold, Item.Type.Gold)
         { }
 
         //DRAW UPDATE
-        public new void Update(Character player, Hud score)
+        public override void Update(Character player, Hud score)
         {
             if (player.rectangle.Collide_object(hitbox) && !hasBeenTaken)
             {
@@ -27,13 +27,12 @@ namespace GravityTutorial
             }
         }
 
-        public new void Draw(SpriteBatch spriteBatch)
+        public override void Draw(SpriteBatch spriteBatch)
         {
             if (!hasBeenTaken)
             {
                 spriteBatch.Draw(texture, position, Color.White);
             }
-            
         }
     }
 }

@@ -108,9 +108,15 @@ namespace GravityTutorial
 
         protected override void Update(GameTime gameTime)
         {
-            Ressource.screenWidth = GraphicsDevice.Viewport.Height;
-            Ressource.screenHeight = GraphicsDevice.Viewport.Width;
-            if (Keyboard.GetState().IsKeyDown(Keys.Enter)) Exit();
+            bool sizeChanged = false;
+            if (Ressource.screenWidth != GraphicsDevice.Viewport.Width || Ressource.screenHeight != GraphicsDevice.Viewport.Height)
+            {
+                Ressource.screenWidth = GraphicsDevice.Viewport.Width;
+                Ressource.screenHeight = GraphicsDevice.Viewport.Height;
+                sizeChanged = true;
+            }
+            
+            //if (Keyboard.GetState().IsKeyDown(Keys.Enter)) Exit();
             if (exitgame)
                 this.Exit();
             
@@ -123,7 +129,7 @@ namespace GravityTutorial
                     }
                     else
                     {
-                        menu.Update(Mouse.GetState(), Keyboard.GetState(), ref menu);
+                        menu.Update(Mouse.GetState(), Keyboard.GetState(), ref menu, sizeChanged);
                     }
 
             base.Update(gameTime);
@@ -137,7 +143,7 @@ namespace GravityTutorial
             /* VIDEO A FIX
                     spriteBatch.Begin();
                     spriteBatch.Draw(VidPlayer.GetTexture(), vidRectangle, Color.White);*/
-                    if (inGame)
+                    if (inGame || menu.actualType == Menu.MenuType.pause)
                     {
                         spriteBatch.Begin(SpriteSortMode.Deferred,
                                 BlendState.AlphaBlend,
@@ -150,14 +156,14 @@ namespace GravityTutorial
                         // HUD
                         spriteBatch.Begin();
                         score.Draw(spriteBatch);
-                        
+                        spriteBatch.End();
                     }
-                    else
+                    if (!inGame)
                     {
                         spriteBatch.Begin();
                         menu.Draw(spriteBatch, Mouse.GetState());
+                        spriteBatch.End();
                     }
-            spriteBatch.End();
 
             base.Draw(gameTime);
         }
