@@ -7,8 +7,8 @@
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
       <Options>None</Options>
-      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MusicRessources\DRUM&amp;BASS.xnb</Output>
-      <Extra>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MusicRessources\DRUM&amp;BASS.wma</Extra>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MusicRessources\DRUM&amp;BASS.xnb</Output>
+      <Extra>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MusicRessources\DRUM&amp;BASS.wma</Extra>
       <Time>2014-03-11T16:29:22+01:00</Time>
     </Item>
     <Item>
@@ -17,7 +17,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Tile2.xnb</Output>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Tile2.xnb</Output>
       <Time>2014-03-11T16:29:22+01:00</Time>
     </Item>
     <Item>
@@ -26,7 +26,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Tile1.xnb</Output>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\Tile1.xnb</Output>
       <Time>2014-03-11T16:29:22+01:00</Time>
     </Item>
     <Item>
@@ -35,7 +35,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\InGameRessources\back.xnb</Output>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\InGameRessources\back.xnb</Output>
       <Time>2014-03-11T16:29:22+01:00</Time>
     </Item>
     <Item>
@@ -44,7 +44,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\CharacterRessources\walkpetit.xnb</Output>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\CharacterRessources\walkpetit.xnb</Output>
       <Time>2014-03-11T16:29:22+01:00</Time>
     </Item>
     <Item>
@@ -53,7 +53,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\BonusRessources\items.xnb</Output>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\BonusRessources\items.xnb</Output>
       <Time>2014-04-13T16:44:30+02:00</Time>
     </Item>
     <Item>
@@ -62,7 +62,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MenuRessources\backgroundmenu.xnb</Output>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MenuRessources\backgroundmenu.xnb</Output>
       <Time>2014-03-11T16:29:22+01:00</Time>
     </Item>
     <Item>
@@ -71,8 +71,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MenuRessources\backgroundmenugris.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MenuRessources\backgroundmenugris.xnb</Output>
+      <Time>2014-03-11T16:29:22+01:00</Time>
     </Item>
     <Item>
       <Source>MenuRessources\title.png</Source>
@@ -80,8 +80,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MenuRessources\title.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MenuRessources\title.xnb</Output>
+      <Time>2014-03-11T16:29:22+01:00</Time>
     </Item>
     <Item>
       <Source>BonusRessources\gold.png</Source>
@@ -89,8 +89,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\BonusRessources\gold.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\BonusRessources\gold.xnb</Output>
+      <Time>2014-03-29T15:05:38+01:00</Time>
     </Item>
     <Item>
       <Source>ecranbleu.jpg</Source>
@@ -98,8 +98,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\ecranbleu.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\ecranbleu.xnb</Output>
+      <Time>2014-03-29T22:14:18+01:00</Time>
     </Item>
     <Item>
       <Source>InGameRessources\bleucrash.jpg</Source>
@@ -107,8 +107,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\InGameRessources\bleucrash.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\InGameRessources\bleucrash.xnb</Output>
+      <Time>2014-03-30T10:16:20+02:00</Time>
     </Item>
     <Item>
       <Source>MenuRessources\boutton.png</Source>
@@ -116,8 +116,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MenuRessources\boutton.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MenuRessources\boutton.xnb</Output>
+      <Time>2014-04-09T15:55:00+02:00</Time>
     </Item>
     <Item>
       <Source>vid.wmv</Source>
@@ -125,8 +125,9 @@
       <Importer>WmvImporter</Importer>
       <Processor>VideoProcessor</Processor>
       <Options>None</Options>
-      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\vid.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\vid.xnb</Output>
+      <Extra>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\vid.wmv</Extra>
+      <Time>2014-03-11T16:29:22+01:00</Time>
     </Item>
     <Item>
       <Source>MusicRessources\SF-course_sable1.wav</Source>
@@ -134,8 +135,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MusicRessources\SF-course_sable1.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MusicRessources\SF-course_sable1.xnb</Output>
+      <Time>2014-03-11T16:29:22+01:00</Time>
     </Item>
     <Item>
       <Source>InGameRessources\Arial.spritefont</Source>
@@ -143,8 +144,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\InGameRessources\Arial.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\InGameRessources\Arial.xnb</Output>
+      <Time>2014-03-14T16:25:30+01:00</Time>
     </Item>
     <Item>
       <Source>MenuRessources\ArialDefaultMenu.spritefont</Source>
@@ -152,8 +153,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MenuRessources\ArialDefaultMenu.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MenuRessources\ArialDefaultMenu.xnb</Output>
+      <Time>2014-04-09T15:45:12+02:00</Time>
     </Item>
     <Item>
       <Source>MenuRessources\MenuFont.spritefont</Source>
@@ -161,19 +162,28 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MenuRessources\MenuFont.xnb</Output>
-      <Time>0001-01-01T00:00:00</Time>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MenuRessources\MenuFont.xnb</Output>
+      <Time>2014-04-09T15:45:38+02:00</Time>
     </Item>
-    <BuildSuccessful>false</BuildSuccessful>
+    <Item>
+      <Source>MenuRessources\champtxt.png</Source>
+      <Name>MenuRessources\champtxt</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\MenuRessources\champtxt.xnb</Output>
+      <Time>2014-04-21T14:40:13.5245873+02:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>F:\V1.6 16-04-14\GravityTutorial\GravityTutorialContent\</RootDirectory>
-      <LoggerRootDirectory>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\</LoggerRootDirectory>
-      <IntermediateDirectory>F:\V1.6 16-04-14\GravityTutorial\GravityTutorialContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>F:\V1.6 16-04-14\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorialContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorialContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Asus\Desktop\Epita\Projet\Save projet\V1.7\GravityTutorial\GravityTutorial\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

@@ -30,6 +30,7 @@ namespace GravityTutorial
         public bool hasJumped;
         public bool hasJumped2;
         public int saut = 6;
+        bool cooldownDoubleJump;
         //int Timer_double_jump;
         //int double_jump_timming = 50;
 
@@ -59,8 +60,9 @@ namespace GravityTutorial
             this.Timer = 0;
             this.frameCollumn = 1;
             this.frameLine = 1;
+            cooldownDoubleJump = false;
 
-            CurrentItem = Item.Type.None;
+            CurrentItem = Item.Type.DoubleJump;
 
         }
 
@@ -133,19 +135,24 @@ namespace GravityTutorial
             }
 
 
-            if (Keyboard.GetState().IsKeyDown(Ressource.Key[Ressource.inGameAction.Jump]) && (hasJumped == false || (hasJumped2 == false && CurrentItem == Item.Type.DoubleJump)))
+            if (Keyboard.GetState().IsKeyDown(Ressource.Key[Ressource.inGameAction.Jump]) && !hasJumped)
             {
                 position.Y -= 5f;
                 velocity.Y = -saut;
-                if (hasJumped == true)
-                {
-                    hasJumped2 = true;
-                }
-                else
-                {
-                    hasJumped = true;
-                }
-                
+                hasJumped = true;
+                cooldownDoubleJump = true;
+            }
+
+            if (Keyboard.GetState().IsKeyUp(Ressource.Key[Ressource.inGameAction.Jump]) && cooldownDoubleJump)
+            {
+                cooldownDoubleJump = false;
+            }
+
+            if (Keyboard.GetState().IsKeyDown(Ressource.Key[Ressource.inGameAction.Jump]) && hasJumped && !hasJumped2 && CurrentItem == Item.Type.DoubleJump && !cooldownDoubleJump)
+            {
+                position.Y -= 5f;
+                velocity.Y = -saut;
+                hasJumped2 = true;
             }
 
             float i = 1;
