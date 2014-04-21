@@ -51,7 +51,7 @@ namespace GravityTutorial
         SpriteEffects Effect;
         Direction Direction;
         int Timer;
-        int AnimationSpeed = 3;
+        int AnimationSpeed;
         //int AnimationSpeedJump = 7;
 
         //BONUS
@@ -113,6 +113,7 @@ namespace GravityTutorial
                 nbr_sprite = 28;
                 player_Height = 64;
                 player_Width = 64;
+                AnimationSpeed = 9;
             }
             else
             {
@@ -121,6 +122,8 @@ namespace GravityTutorial
                     nbr_sprite = 4;
                     player_Height = 41;
                     player_Width = 32;
+                    AnimationSpeed = 3;
+
                 }
                 else
                 {
@@ -129,12 +132,14 @@ namespace GravityTutorial
                         nbr_sprite = 19;
                         player_Height = 55;
                         player_Width = 33;
+                        AnimationSpeed = 3;
 
                         if (attack)
                         {
                             nbr_sprite = 19;
                             player_Height = 55;
                             player_Width = 42;
+                            AnimationSpeed = 3;
                         }
                     }
                     else
@@ -144,12 +149,14 @@ namespace GravityTutorial
                             nbr_sprite = 16;
                             player_Height = 43;
                             player_Width = 51;
+                            AnimationSpeed = 3;
                         }
                         else
                         {
                             nbr_sprite = 16;
                             player_Height = 43;
                             player_Width = 41;
+                            AnimationSpeed = 3;
                         }
                     }
                 }
@@ -228,7 +235,7 @@ namespace GravityTutorial
                     attack = true;
                 }
             }
-            else 
+            else
             {
                 if (hasJumped)
                 {
@@ -299,7 +306,7 @@ namespace GravityTutorial
             }
 
 
-            sprite_update(spawn,attack,stop,jump);
+            sprite_update(spawn, attack, stop, jump);
         }
 
         //COLLISION
@@ -404,7 +411,7 @@ namespace GravityTutorial
                 }
                 else
                 {
-                    spriteBatch.Draw(this.texture, rectangle, new Rectangle((this.frameCollumn - 1) * player_Width, 64 + 41 + 43 + 43, player_Width, player_Height), Color.White, 0f, new Vector2(0, 0), this.Effect, 0f);
+                    spriteBatch.Draw(this.texture, rectangle, new Rectangle((this.frameCollumn - 1) * player_Width, 64 + 41 + 43 + 43 + 1, player_Width, player_Height - 1), Color.White, 0f, new Vector2(0, 0), this.Effect, 0f);
                 }
             }
             else

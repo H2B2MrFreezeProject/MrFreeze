@@ -23,7 +23,7 @@ namespace GravityTutorial
         public double timer;
         int cd;
         bool new_cd;
-        public bool youlose;
+        public static bool youlose;
         Rectangle loser;
         bool saved;
 

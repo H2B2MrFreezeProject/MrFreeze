@@ -27,7 +27,7 @@ namespace GravityTutorial
             if (player.rectangle.Collide_object(hitbox) && !hasBeenTaken)
             {
                 has_collide = true;
-                score.youlose = true;
+                Hud.youlose = true;
             }
         }
 

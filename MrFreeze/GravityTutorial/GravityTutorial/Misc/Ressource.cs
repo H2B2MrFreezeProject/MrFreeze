@@ -23,6 +23,8 @@ namespace GravityTutorial
             Button, BackgroundMenuMain, BackgroundMenuPause, Title,
             Gold, Items, Loser, igloo, healthbar;
 
+        public static Texture2D Ennemy3;
+
         public static ParticleEffect
             BasicExplosion, Basicfireball, BasicSmokePlume, BeamMeUp, CampFire, FlowerBloom, MagicTrail, Paparazzi, SimpleRain, StarTrail, WaterJet;
 
@@ -68,10 +70,15 @@ namespace GravityTutorial
             string InGameFile = "InGameRessources\\";
             //string particules
             string particules = "particules\\";
+            string EnnemiesFile = "EnnemiesResources\\";
 
             //PLAYER
             Player_animation = Content.Load<Texture2D>(CharacterFile + "FIXMegaman");
             healthbar = Content.Load<Texture2D>(CharacterFile + "healthbar");
+
+            // ENEMIES
+            Ennemy3 = Content.Load<Texture2D>(EnnemiesFile + "Ennemy3");
+
 
             //GAME
             background = Content.Load<Texture2D>(InGameFile + "back");

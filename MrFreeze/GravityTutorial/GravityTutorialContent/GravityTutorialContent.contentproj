@@ -41,7 +41,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="ProjectMercury">
-      <HintPath>..\..\..\MrFreezeProject\GravityTutorial\GravityTutorial\ProjectMercury.dll</HintPath>
+      <HintPath>..\..\..\..\..\ProjectMercury.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -439,6 +439,13 @@
   <ItemGroup>
     <Compile Include="CharacterRessources\healthbar.jpg">
       <Name>healthbar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EnnemiesResources\Ennemy3.png">
+      <Name>Ennemy3</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

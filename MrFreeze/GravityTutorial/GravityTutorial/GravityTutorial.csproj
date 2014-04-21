@@ -91,7 +91,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="ProjectMercury">
-      <HintPath>..\..\..\particules_test\particules_test\particules_test\ProjectMercury.dll</HintPath>
+      <HintPath>..\..\..\..\..\ProjectMercury.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Private>False</Private>
@@ -117,6 +117,7 @@
     <Compile Include="InGame Hors jeu\web.cs" />
     <Compile Include="InGame Jeu\Character.cs" />
     <Compile Include="InGame Jeu\Ennemy.cs" />
+    <Compile Include="InGame Jeu\Ennemy3.cs" />
     <Compile Include="InGame Jeu\health.cs" />
     <Compile Include="LevelGeneration\Level.cs" />
     <Compile Include="LevelGeneration\loadfile.cs" />

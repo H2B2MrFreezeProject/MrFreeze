@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Media;
 using GravityTutorial.LevelGeneration;
 using System.IO;
 using Microsoft.Xna.Framework.Content;
+using GravityTutorial.InGame_Jeu;
 
 namespace GravityTutorial
 {
@@ -17,12 +18,13 @@ namespace GravityTutorial
     {
         //FIELDS
         public List<Character> Heroes;
-        //List<Ennemy> Ennemies;
+        public List<Ennemy3> Ennemies3;
         public List<Bonus> Bonuses;
         public int[,] read;
         public loadfile file = new loadfile();
         public Map map;
         public int lvl;
+        public bool updateHero = true;
 
         //CONSRTRUCTOR
         public Level(int lvl)
@@ -32,6 +34,7 @@ namespace GravityTutorial
             map = new Map();
             Heroes = new List<Character>();
             Bonuses = new List<Bonus>();
+            Ennemies3 = Map.Ennemies3;
             switch (lvl)
             {
                 case 0:
@@ -43,6 +46,7 @@ namespace GravityTutorial
                         int block_size = 50;
                         map.Generate(file.read(dir + "lvl1.txt"), block_size, this);
                         Heroes.Add(new Character(Ressource.Player_animation, new Vector2(0, 0)));
+
                         break;
                     }
                 case 2:
@@ -56,7 +60,7 @@ namespace GravityTutorial
                     {
                         int block_size = 50;
                         map.Generate(file.read(dir + "lvl3.txt"), block_size, this);
-                        Heroes.Add(new Character(Ressource.Player_animation, new Vector2(0, 15*block_size)));
+                        Heroes.Add(new Character(Ressource.Player_animation, new Vector2(0, 15 * block_size)));
                         break;
                     }
                 case 4:
@@ -86,22 +90,60 @@ namespace GravityTutorial
             //TODO
         }
 
-        
 
-        
+
+
         //UPDATE & DRAW
         public void Update(GameTime gameTime, SoundEffectInstance effect)
         {
-            Heroes.ElementAt(0).Update(gameTime, effect);
+            if (updateHero)
+                Heroes.ElementAt(0).Update(gameTime, effect);
+
             foreach (CollisionTiles tile in map.CollisionTiles)
             {
                 Heroes.ElementAt(0).Collision(tile.Rectangle, map.Width, map.Height, Ressource.effect2, tile.Tile_name);
+
+
+                foreach (Ennemy3 e in Ennemies3)
+                {
+                    e.Patrol(tile.Rectangle, tile.Tile_name);
+                    e.Collision(tile.Rectangle, tile.Tile_name);
+                    e.hit(Heroes.ElementAt(0));
+                }
+
+
             }
+
+            foreach (CollisionTiles tile in map.InvisibleTiles)
+            {
+                foreach (Ennemy3 e in Ennemies3)
+                {
+                    e.Patrol(tile.Rectangle, tile.Tile_name);
+                    e.Collision(tile.Rectangle, tile.Tile_name);
+                }
+            }
+
+
             foreach (Bonus gold in Bonuses)
-            {           
-                 gold.Update(Heroes.ElementAt(0), Game1.score);
+            {
+                gold.Update(Heroes.ElementAt(0), Game1.score);
+            }
+            foreach (Ennemy3 e in Ennemies3)
+            {
+
+
+                if (e.hasHit)
+                {
+                    //updateHero = false;
+                    //Hud.youlose = true;
+                }
+                    e.Update(gameTime);
+                
+
+
             }
         }
+        
 
         public void Draw(SpriteBatch spriteBatch)
         {
@@ -109,12 +151,10 @@ namespace GravityTutorial
             map.Draw(spriteBatch);
             foreach (Bonus gold in Bonuses)
             {
-               
-                    gold.Draw(spriteBatch);
-                
+
+                gold.Draw(spriteBatch);
+
             }
-
-
 
 
             foreach (Character c in Heroes)
@@ -126,15 +166,11 @@ namespace GravityTutorial
             {
                 b.Draw(spriteBatch);
             }
-
-
-            /*foreach (Ennemy e in Ennemies)
+            foreach (Ennemy3 e in Ennemies3)
             {
                 e.Draw(spriteBatch);
             }
 
-            Map.Draw(spriteBatch);
-            //TODO*/
         }
 
 
