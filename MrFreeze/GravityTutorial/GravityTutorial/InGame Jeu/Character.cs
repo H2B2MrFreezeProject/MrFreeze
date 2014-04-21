@@ -15,24 +15,32 @@ namespace GravityTutorial
         Right,
         Left
     };
+
     public class Character
     {
+        //VAR
+        int nbr_sprite;
+        int player_Height;
+        int player_Width;
+        bool spawn;
+        bool jump;
+        bool stop;
+        bool attack;
+
+        //HEALTH
+        public int life_changment;
+
         //DEFINITION
         Texture2D texture;
-        int nbr_sprite = 12;
-        int player_Height = 90;
-        int player_Width = 95;
-
         public Vector2 position;
         public Vector2 velocity;
 
         //SAUT
         public bool hasJumped;
         public bool hasJumped2;
+        public bool hasDoubleJumped;
         public int saut = 6;
         bool cooldownDoubleJump;
-        //int Timer_double_jump;
-        //int double_jump_timming = 50;
 
         //HITBOX
         public Rectangle rectangle;
@@ -43,20 +51,24 @@ namespace GravityTutorial
         SpriteEffects Effect;
         Direction Direction;
         int Timer;
-        int AnimationSpeed = 5;
+        int AnimationSpeed = 3;
         //int AnimationSpeedJump = 7;
 
         //BONUS
         public Item.Type CurrentItem;
 
-
         public Character(Texture2D newTexture, Vector2 newPosition)
         {
             texture = newTexture;
 
+            life_changment = 0;
+
+
+            hasJumped2 = true;
+            spawn = true;
             position = newPosition;
             hasJumped = true;
-            hasJumped2 = true;
+            hasDoubleJumped = false;
             this.Timer = 0;
             this.frameCollumn = 1;
             this.frameLine = 1;
@@ -73,76 +85,172 @@ namespace GravityTutorial
             if (this.Timer == this.AnimationSpeed)
             {
                 this.Timer = 0;
-                this.frameCollumn++;
-                if (this.frameCollumn > this.nbr_sprite)
+                #region spawning
+                if (spawn)
                 {
-                    this.frameCollumn = 1;
+                    this.frameCollumn++;
+                    if (this.frameCollumn >= this.nbr_sprite)
+                    {
+                        spawn = false;
+                    }
+                }
+                #endregion
+                else
+                {
+                    this.frameCollumn++;
+                    if (this.frameCollumn >= this.nbr_sprite)
+                    {
+                        this.frameCollumn = 1;
+                    }
+                }
+            }
+        }
+
+        void sprite_update(bool spawn, bool attack, bool stop, bool jump)
+        {
+            if (spawn)
+            {
+                nbr_sprite = 28;
+                player_Height = 64;
+                player_Width = 64;
+            }
+            else
+            {
+                if (stop)
+                {
+                    nbr_sprite = 4;
+                    player_Height = 41;
+                    player_Width = 32;
+                }
+                else
+                {
+                    if (jump)
+                    {
+                        nbr_sprite = 19;
+                        player_Height = 55;
+                        player_Width = 33;
+
+                        if (attack)
+                        {
+                            nbr_sprite = 19;
+                            player_Height = 55;
+                            player_Width = 42;
+                        }
+                    }
+                    else
+                    {
+                        if (attack)
+                        {
+                            nbr_sprite = 16;
+                            player_Height = 43;
+                            player_Width = 51;
+                        }
+                        else
+                        {
+                            nbr_sprite = 16;
+                            player_Height = 43;
+                            player_Width = 41;
+                        }
+                    }
                 }
             }
         }
 
         public void Update(GameTime gameTime, SoundEffectInstance effect)
         {
-            //MECANISME
+            life_changment = 0;
+            //DEFINITION
+            rectangle = new Rectangle((int)position.X, (int)position.Y, 44, 50);
+
+            //RESPAWN
             if (Keyboard.GetState().IsKeyDown(Keys.R))
             {
                 position = Vector2.One;
                 velocity.Y = 0;
+                spawn = true;
             }
-            position += velocity;
 
+            position += velocity;
 
             if (velocity.Y != 0)
                 this.hasJumped = true;
 
 
-            if (hasJumped)
+            if (spawn)
             {
-                this.frameLine = 2;
-                this.nbr_sprite = 6;
-                if (Keyboard.GetState().IsKeyUp(Ressource.Key[Ressource.inGameAction.Right]) && (Keyboard.GetState().IsKeyUp(Ressource.Key[Ressource.inGameAction.Left])))
-                {
-                    this.frameCollumn = 1;
-                }
+                Animate();
             }
-            else
+            if (Keyboard.GetState().IsKeyUp(Ressource.Key[Ressource.inGameAction.Right]) && (Keyboard.GetState().IsKeyUp(Ressource.Key[Ressource.inGameAction.Left])))
             {
-                this.frameLine = 1;
-                this.nbr_sprite = 12;
+                stop = true;
+                Animate();
             }
-            rectangle = new Rectangle((int)position.X, (int)position.Y, player_Width, player_Height);
 
-
+            // SET UP
             if (Keyboard.GetState().IsKeyDown(Ressource.Key[Ressource.inGameAction.Right]))
             {
-                velocity.X = 3f;
+                stop = false;
+                velocity.X = 5f;
                 this.Direction = Direction.Right;
                 this.Animate();
             }
             else if (Keyboard.GetState().IsKeyDown(Ressource.Key[Ressource.inGameAction.Left]))
             {
-                velocity.X = -3f;
+                stop = false;
+                velocity.X = -5f;
                 this.Direction = Direction.Left;
                 this.Animate();
             }
-            else if (Keyboard.GetState().IsKeyDown(Ressource.Key[Ressource.inGameAction.Pause]))
-            {
-                Game1.inGame = false;
-            }
             else
             {
+                stop = true;
                 velocity.X = 0f;
             }
 
-
-            if (Keyboard.GetState().IsKeyDown(Ressource.Key[Ressource.inGameAction.Jump]) && !hasJumped)
+            //PAUSE
+            if (Keyboard.GetState().IsKeyDown(Ressource.Key[Ressource.inGameAction.Pause]))
             {
+                stop = true;
+                Game1.inGame = false;
+            }
+
+            //TIR
+            if (Keyboard.GetState().IsKeyDown(Ressource.Key[Ressource.inGameAction.Shoot]))
+            {
+                if (hasJumped)
+                {
+                    jump = true;
+                    attack = true;
+                }
+                else
+                {
+                    jump = false;
+                    attack = true;
+                }
+            }
+            else 
+            {
+                if (hasJumped)
+                {
+                    jump = true;
+                    attack = false;
+                }
+                else
+                {
+                    attack = false;
+                    jump = false;
+                }
+            }
+
+            //SAUT
+            if (Keyboard.GetState().IsKeyDown(Ressource.Key[Ressource.inGameAction.Jump]) && hasJumped == false)
+            {
+                jump = true;
                 position.Y -= 5f;
                 velocity.Y = -saut;
                 hasJumped = true;
                 cooldownDoubleJump = true;
             }
-
             if (Keyboard.GetState().IsKeyUp(Ressource.Key[Ressource.inGameAction.Jump]) && cooldownDoubleJump)
             {
                 cooldownDoubleJump = false;
@@ -154,9 +262,9 @@ namespace GravityTutorial
                 velocity.Y = -saut;
                 hasJumped2 = true;
             }
-
             float i = 1;
             velocity.Y += 0.15f * i;
+
 
             //SWITCH POUR GERER EFFECT SUR LE SPRITE
             switch (this.Direction)
@@ -170,7 +278,7 @@ namespace GravityTutorial
             }
 
 
-            //Musique
+            //MUSIQUE
             if (Ressource.parameter[0] && MediaPlayer.State != MediaState.Playing)
             {
                 MediaPlayer.Play(Ressource.song);
@@ -181,16 +289,26 @@ namespace GravityTutorial
             {
                 MediaPlayer.Stop();
             }
+            if (Keyboard.GetState().IsKeyDown(Keys.A))
+            {
+                life_changment = -1;
+            }
+            if (Keyboard.GetState().IsKeyDown(Keys.Z))
+            {
+                life_changment = 1;
+            }
+
+
+            sprite_update(spawn,attack,stop,jump);
         }
 
-
-
-        public void Collision(Rectangle newRectangle, int xoffset, int yoffset, SoundEffectInstance effect, string name)
+        //COLLISION
+        public void Collision(Rectangle obstacle, int xoffset, int yoffset, SoundEffectInstance effect, string name)
         {
-            Rectangle superrectangle = new Rectangle((int)position.X + (int)velocity.X, (int)position.Y + saut, player_Height, player_Width);
+            Rectangle player_plus_1 = new Rectangle((int)position.X + (int)velocity.X, (int)position.Y + saut, player_Height, player_Width);
             if (name == "Tile1" || name == "Tile2")
             {
-                if (rectangle.isOnTopOf(newRectangle))
+                if (rectangle.isOnTopOf(obstacle))
                 {
 
                     if (Ressource.parameter[1] && this.hasJumped == false)
@@ -218,10 +336,10 @@ namespace GravityTutorial
                         effect.Pause();
                     }
 
-                    rectangle.Y = newRectangle.Y - rectangle.Height + 4;
+                    rectangle.Y = obstacle.Y - rectangle.Height;
                     velocity.Y = 0;
                     hasJumped = false;
-                    hasJumped2 = false;
+                    hasDoubleJumped = false;
                     if (Keyboard.GetState().IsKeyDown(Ressource.Key[Ressource.inGameAction.Jump]) == true)
                     {
                         effect.Resume();
@@ -230,25 +348,25 @@ namespace GravityTutorial
 
                 }
 
-            //COLISION
+                //COLISION
 
-                if (rectangle.isOnLeftOf(newRectangle) && Keyboard.GetState().IsKeyDown(Ressource.Key[Ressource.inGameAction.Right]))
+                if (rectangle.isOnLeftOf(obstacle) && Keyboard.GetState().IsKeyDown(Ressource.Key[Ressource.inGameAction.Right]))
                 {
-                    position.X = newRectangle.X - rectangle.Width - 3;
+                    position.X = obstacle.X - rectangle.Width - 3;
 
                 }
-                if (rectangle.isOnRightOf(newRectangle) && Keyboard.GetState().IsKeyDown(Ressource.Key[Ressource.inGameAction.Left]))
+                if (rectangle.isOnRightOf(obstacle) && Keyboard.GetState().IsKeyDown(Ressource.Key[Ressource.inGameAction.Left]))
                 {
-                    position.X = newRectangle.X + newRectangle.Width + 3;
+                    position.X = obstacle.X + obstacle.Width + 3;
 
                 }
-                if (superrectangle.isOnBotOf(newRectangle))
+                if (player_plus_1.isOnBotOf(obstacle))
                 {
                     if (velocity.Y < 0)
                     {
                         velocity.Y = -velocity.Y;
                     }
-                    position.Y = newRectangle.Bottom + velocity.Y;
+                    position.Y = obstacle.Bottom + velocity.Y;
                 }
 
                 if (this.velocity.Y > 0)
@@ -269,7 +387,38 @@ namespace GravityTutorial
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(this.texture, rectangle, new Rectangle((this.frameCollumn - 1) * player_Width, (this.frameLine - 1) * player_Height, player_Width, player_Height), Color.White, 0f, new Vector2(0, 0), this.Effect, 0f);
+            if (spawn)
+            {
+                spriteBatch.Draw(this.texture, rectangle, new Rectangle((this.frameCollumn - 1) * player_Width, 0, player_Width, player_Height), Color.White, 0f, new Vector2(0, 0), this.Effect, 0f);
+            }
+            else if (stop)
+            {
+                spriteBatch.Draw(this.texture, rectangle, new Rectangle((this.frameCollumn - 1) * player_Width, 64, player_Width, player_Height), Color.White, 0f, new Vector2(0, 0), this.Effect, 0f);
+            }
+            else if (jump)
+            {
+
+                if (attack)
+                {
+                    spriteBatch.Draw(this.texture, rectangle, new Rectangle((this.frameCollumn - 1) * player_Width, 64 + 41 + 43 + 43 + 55, player_Width, player_Height), Color.White, 0f, new Vector2(0, 0), this.Effect, 0f);
+                }
+                else
+                {
+                    spriteBatch.Draw(this.texture, rectangle, new Rectangle((this.frameCollumn - 1) * player_Width, 64 + 41 + 43 + 43, player_Width, player_Height), Color.White, 0f, new Vector2(0, 0), this.Effect, 0f);
+                }
+            }
+            else
+            {
+                if (attack)
+                {
+                    spriteBatch.Draw(this.texture, rectangle, new Rectangle((this.frameCollumn - 1) * player_Width, 64 + 41 + 43, player_Width, player_Height), Color.White, 0f, new Vector2(0, 0), this.Effect, 0f);
+                }
+                else
+                {
+                    spriteBatch.Draw(this.texture, rectangle, new Rectangle((this.frameCollumn - 1) * player_Width, 64 + 41, player_Width, player_Height), Color.White, 0f, new Vector2(0, 0), this.Effect, 0f);
+                }
+            }
         }
     }
+
 }

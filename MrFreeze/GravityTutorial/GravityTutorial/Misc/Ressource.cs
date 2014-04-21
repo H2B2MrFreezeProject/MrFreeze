@@ -8,14 +8,23 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Media;
 
+using ProjectMercury;
+using ProjectMercury.Emitters;
+using ProjectMercury.Modifiers;
+using ProjectMercury.Renderers; 
+
+
 namespace GravityTutorial
 {
     public static class Ressource
     {
-        public static Texture2D Player_animation, 
+        public static Texture2D Player_animation,
             background,
-            Button, BackgroundMenuMain, BackgroundMenuPause, Title, TextBox,
-            Gold, Items, Loser;
+            Button, BackgroundMenuMain, BackgroundMenuPause, Title,
+            Gold, Items, Loser, igloo, healthbar;
+
+        public static ParticleEffect
+            BasicExplosion, Basicfireball, BasicSmokePlume, BeamMeUp, CampFire, FlowerBloom, MagicTrail, Paparazzi, SimpleRain, StarTrail, WaterJet;
 
         public static SpriteFont Font;
         public static SpriteFont MenuPolice, ArialDefaultMenu;
@@ -34,6 +43,7 @@ namespace GravityTutorial
             Right,
             Jump,
             Pause,
+            Shoot,
         };
 
         public static Dictionary<Ressource.inGameAction, Microsoft.Xna.Framework.Input.Keys> Key =
@@ -56,15 +66,20 @@ namespace GravityTutorial
             //string MiscFile = "MiscRessources\\";
             string BonusFile = "BonusRessources\\";
             string InGameFile = "InGameRessources\\";
+            //string particules
+            string particules = "particules\\";
 
             //PLAYER
-            Player_animation = Content.Load<Texture2D>(CharacterFile + "walkpetit");
+            Player_animation = Content.Load<Texture2D>(CharacterFile + "FIXMegaman");
+            healthbar = Content.Load<Texture2D>(CharacterFile + "healthbar");
 
             //GAME
             background = Content.Load<Texture2D>(InGameFile + "back");
             Loser = Content.Load<Texture2D>(InGameFile + "bleucrash");
+            igloo = Content.Load<Texture2D>(InGameFile + "Tile10");
 
             //TOUCHES
+            Key.Add(inGameAction.Shoot, Keys.LeftShift);
             Key.Add(inGameAction.Left, Keys.Left);
             Key.Add(inGameAction.Right, Keys.Right);
             Key.Add(inGameAction.Jump, Keys.Space);
@@ -75,13 +90,12 @@ namespace GravityTutorial
             BackgroundMenuMain = Content.Load<Texture2D>(MenuFile + "backgroundmenu");
             BackgroundMenuPause = Content.Load<Texture2D>(MenuFile + "backgroundmenugris");
             Title = Content.Load<Texture2D>(MenuFile + "title");
-            TextBox = Content.Load<Texture2D>(MenuFile + "champtxt");
             MenuPolice = Content.Load<SpriteFont>(MenuFile + "MenuFont");
             ArialDefaultMenu = Content.Load<SpriteFont>(MenuFile + "ArialDefaultMenu");
             pseudo = "USER";
 
             //MENUSTRING
-            MenuString.Add("Retour", new Tuple<string,string>("Retour","Back"));
+            MenuString.Add("Retour", new Tuple<string, string>("Retour", "Back"));
             MenuString.Add("Jouer", new Tuple<string, string>("Jouer", "Play"));
             MenuString.Add("Options", new Tuple<string, string>("Options", "Options"));
             MenuString.Add("Quitter", new Tuple<string, string>("Quitter", "Quit"));
@@ -116,8 +130,8 @@ namespace GravityTutorial
             Font = Content.Load<SpriteFont>(InGameFile + "Arial");
 
             //ITEMS
-            Gold = Content.Load<Texture2D>(BonusFile + "gold");
-            Items = Content.Load<Texture2D>(BonusFile + "items");
+            Gold = Content.Load<Texture2D>(BonusFile + "Tile4");
+            //Items = Content.Load<Texture2D>(BonusFile + "items");
 
             //SOUND 
             effect = Content.Load<SoundEffect>(MusicFile + "SF-course_sable1");
@@ -126,6 +140,19 @@ namespace GravityTutorial
 
             //INTRO
             vid = Content.Load<Video>("vid");
+
+            //PARTICULES
+            BasicExplosion= Content.Load<ParticleEffect>((particules + "BasicExplosion"));
+            Basicfireball = Content.Load<ParticleEffect>(particules + "BasicFireball");
+            BasicSmokePlume = Content.Load<ParticleEffect>(particules + "BasicSmokePlume");
+            BeamMeUp = Content.Load<ParticleEffect>(particules + "BeamMeUp");
+            CampFire = Content.Load<ParticleEffect>(particules + "CampFire");
+            FlowerBloom = Content.Load<ParticleEffect>(particules + "FlowerBloom");
+            MagicTrail = Content.Load<ParticleEffect>(particules + "MagicTrail");
+            Paparazzi = Content.Load<ParticleEffect>(particules + "Paparazzi");
+            SimpleRain = Content.Load<ParticleEffect>(particules + "SimpleRain");
+            StarTrail = Content.Load<ParticleEffect>(particules + "StarTrail");
+            WaterJet = Content.Load<ParticleEffect>(particules + "WaterJet");
         }
 
     }
